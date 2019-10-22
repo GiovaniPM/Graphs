@@ -1,0 +1,30 @@
+digraph D {
+    subgraph cluster_0 {
+        label = <<table border="0" cellborder="0" cellspacing="0">
+                    <tr><td align="left"><b>Nível XXX                                                                                                       </b></td></tr>
+                    <tr><td align="left"><i>99.999.999</i></td></tr>
+                </table>>
+        fillcolor=honeydew2
+        color=honeydew2
+        style=filled
+        subgraph cluster_1 {
+            label = <<table border="0" cellborder="0" cellspacing="0">
+                        <tr><td align="left"><b>Nível ...                                                                     </b></td></tr>
+                        <tr><td align="left"><i>1</i></td></tr>
+                    </table>>
+            fillcolor=honeydew3
+            color=honeydew3
+            style=filled
+            subgraph cluster_1 {
+                label = <<table border="0" cellborder="0" cellspacing="0">
+                            <tr><td align="left"><b>Nível 1                                   </b></td></tr>
+                            <tr><td align="left"><i>0</i></td></tr>
+                        </table>>
+                fillcolor=honeydew4
+                color=honeydew4
+                style=filled
+                Pedido [fillcolor=white style=filled color=white]
+            }
+        }
+    }
+} 
