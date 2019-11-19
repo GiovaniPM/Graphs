@@ -1,7 +1,5 @@
 digraph {
-    110 [shape=doublecircle];
-    120 [shape=circle];
-    980 [shape=circle];
+    100 [shape=doublecircle];
     999 [shape=Mcircle];
     subgraph cluster_0 {
         color=honeydew3
@@ -13,10 +11,16 @@ digraph {
         label="Cancelar"
         980;
     }
-    110 -> 120 [color="blue" label="Entrada"];
+    subgraph cluster_2 {
+        label="Aprovar"
+        110;
+        120;
+    }
+    100 -> 110 [color="blue" label="Entrada"];
+    110 -> 120 [label="Aprovado"];
+    110 -> 110 [label="Rejeitado"];
     980 -> 999 [label="Cancelado"];
     120 -> 999 [color="green" label="Gerado O3"];
     110 -> 980 [color="red" style=dotted arrowhead=none];
     120 -> 980 [color="red" style=dotted arrowhead=none];
-    { rank=same; 110, 120, 999 }
 }
