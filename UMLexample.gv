@@ -11,7 +11,7 @@ digraph G {
         fontsize = 8
     ]
     Animal [
-        label = "{Animal|+ name : string\l+ age : int\l|+ die() : void\l}"
+        label = "{Animal|+ name : string\l+ age : int\l|+ birth() : void\l+ die() : void\l}"
     ]
     subgraph clusterAnimalImpl {
         label = "Package animal.impl"
