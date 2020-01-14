@@ -1,17 +1,13 @@
 digraph {
-    branco;
-    200 [color=red];
-    500 [color=blue];
-    700 [color=green];
+    branco [style = filled color=gray];
+    200 [style = filled color="#ed4328"];
+    500 [style = filled color="#326da8"];
+    700 [style = filled color=green];
     999;   
-    subgraph cluster_0 {
-        branco;
-        200;
-        500;
-    }
     branco -> 500 [color=blue label="Vinculou"];
     branco -> 200 [color=red label="Errou"];
     200 -> 500 [color=blue label="Vinculou"];
+    500 -> branco [color=gray label="Desvinculou"];
     500 -> 700 [color=green label="Aceitou"];
     700 -> 999 [label="Recebeu"];
 }
