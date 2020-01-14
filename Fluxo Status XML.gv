@@ -1,5 +1,6 @@
 digraph {
-    branco [style = filled color=gray];
+    splines=polyline;
+    branco [color=gray];
     200 [style = filled color="#ed4328"];
     500 [style = filled color="#326da8"];
     700 [style = filled color=green];
