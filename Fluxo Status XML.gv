@@ -1,5 +1,5 @@
 digraph {
-    fontname="arial";
+    fontname="Courrier New";
     branco [color=gray label="branco\nimportado"];
     200 [style=filled color=red fontcolor=white label="200\nerrado"];
     500 [style=filled color=blue fontcolor=white label="500\nvinculado"];
