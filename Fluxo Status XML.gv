@@ -1,14 +1,17 @@
 digraph {
-    splines=polyline;
-    branco [color=gray];
-    200 [style = filled color="#ed4328"];
-    500 [style = filled color="#326da8"];
-    700 [style = filled color=green];
-    999;   
-    branco -> 500 [color=blue label="Vinculou"];
-    branco -> 200 [color=red label="Errou"];
-    200 -> 500 [color=blue label="Vinculou"];
-    500 -> branco [color=gray label="Desvinculou"];
-    500 -> 700 [color=green label="Aceitou"];
+    fontname="arial";
+    branco [color=gray label="branco\nimportado"];
+    200 [style=filled color=red fontcolor=white label="200\nerrado"];
+    500 [style=filled color=blue fontcolor=white label="500\nvinculado"];
+    700 [style=filled color=green label="700\naceito"];
+    999 [style=filled color=black fontcolor=white label="999\nfinalizado"];   
+
+    branco -> 500 [color=blue label="Vinculou" fontcolor=blue];
+    branco -> 200 [color=red label="Errou" fontcolor=red];
+    200 -> 200 [color=red label="Errou" fontcolor=red];
+    200 -> 500 [color=blue label="Vinculou" fontcolor=blue];
+    500 -> branco [color=gray label="Desvinculou" fontcolor=gray];
+    500 -> 200 [color=red label="Rejeitou" fontcolor=red];
+    500 -> 700 [color=green label="Aceitou" fontcolor=green];
     700 -> 999 [label="Recebeu"];
 }
