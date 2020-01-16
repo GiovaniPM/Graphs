@@ -1,7 +1,7 @@
 digraph {
     110 [shape=doublecircle];
-    120 [shape=circle];
-    980 [shape=circle];
+    120 [shape=circle color="blue" fontcolor="blue"];
+    980 [shape=circle color="red" fontcolor="red"];
     999 [shape=Mcircle];
     subgraph cluster_0 {
         color=honeydew3
@@ -10,12 +10,14 @@ digraph {
         LTTR -> NXTR [color="honeydew3:invis:honeydew3"];
     }
     subgraph cluster_1 {
-        label="Cancelar"
+        color="red";
+        fontcolor="red";
+        label="Cancelar";
         980;
     }
-    110 -> 120 [color="blue" label="Entrada"];
+    110 -> 120 [color="blue" label="Entrada" fontcolor="blue"];
     980 -> 999 [label="Cancelado"];
-    120 -> 999 [color="green" label="Gerado O3"];
+    120 -> 999 [color="green" label="Gerado O3" fontcolor="green"];
     110 -> 980 [color="red" style=dotted arrowhead=none];
     120 -> 980 [color="red" style=dotted arrowhead=none];
     { rank=same; 110, 120, 999 }

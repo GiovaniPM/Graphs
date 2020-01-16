@@ -1,0 +1,126 @@
+digraph {  
+graph [nodesep=.1, ranksep=.9];
+splines=yes;
+pad=0.1;
+
+// Default
+node [fontname=Verdana, margin=.05];
+
+// Highlight
+node [shape=circle, fontsize=12, style=filled, fillcolor=white, penwidth=2];
+Registry [label="Decentralized\nRegistry"];
+Airdrop [label="Token\nDistribution"];
+Mechanism [label="Token\nMechanism"];
+Settlements;
+Blog [label="Technical\nBlog"];
+Demos;
+Legal [margin=.1];
+Grants;
+Compute;
+Identity;
+
+// Special
+node [shape=rect, fillcolor="#CCFFFF", penwidth=3, fontsize=14, margin=.4];
+Blockchain;
+
+// Default
+node [shape=circle, fillcolor="#CCCCCC", penwidth=1, fontsize=12, margin=.1];
+
+subgraph cluster_Token {
+  label="Token";
+  margin=.4;
+  fontname=Verdana;
+  style=filled;
+	color="#F0F0F0";
+  Airdrop;
+  Mechanism;
+}
+
+subgraph cluster_Product {
+  label="Product";
+  fontname=Verdana;
+  style=filled;
+	color="#F0F0F0";
+  Sandbox;
+  Users [label="Wireline\nUser\nAuthority"];
+  OpenSource [label="Open\nSource"];
+  Demos;
+}
+
+subgraph cluster_Eng {
+  label="Eng";
+  fontname=Verdana;
+  style=filled;
+	color="#F0F0F0";
+  CLI;
+  Identity;
+  Compute;
+  KVStore [label="Simple\nStore"];
+  Registry;
+  Settlements;
+  Scheduler;
+}
+
+subgraph cluster_Research {
+  style=filled;
+  fontname=Verdana;
+	color="#F0F0F0";
+  Settlements;
+  Registry;
+}
+
+subgraph cluster_Marketing {
+  label="Marketing";
+  fontname=Verdana;
+  style=filled;
+	color="#F0F0F0";
+  Blog;
+  Events;
+  Social;
+  Web;
+}
+
+subgraph cluster_Corp {
+  label="Corp Dev";
+  fontname=Verdana;
+  style=filled;
+	color="#F0F0F0";
+  Grants [label="WDF\nGrants", margin=.2];
+  Recruiting;
+  Legal;
+  MA [label="M&A"];
+}
+
+Sandbox     -> Demos;
+CLI         -> Registry;
+KVStore     -> Compute;
+Scheduler   -> Compute;
+OpenSource  -> Compute;
+OpenSource  -> Demos;
+Compute     -> Settlements:n;
+Mechanism   -> Legal;
+Mechanism   -> Registry;
+Registry    -> Identity;
+Registry    -> Blockchain;
+Settlements -> Blockchain;
+Settlements -> Identity;
+Social      -> Events;
+MA          -> Grants;
+Recruiting  -> Grants;
+Airdrop     -> Grants;
+Airdrop     -> Legal;
+Airdrop     -> Users;
+Social      -> Blog;
+Social      -> Airdrop;
+Users       -> Identity;
+Web         -> Blog;
+Sandbox     -> Users;
+Grants      -> Legal;
+Grants      -> Users;
+Demos       -> Settlements;
+Demos       -> Compute;
+Mechanism   -> Blockchain;
+Identity    -> Blockchain [style=dotted];
+Grants      -> Blockchain;
+
+}
