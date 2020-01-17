@@ -3,7 +3,7 @@ digraph D {
   # Click "next example" button for more examples.
   # "digraph" is the default graph type.
   # Attributes in here apply to the graph itself.
-  pad="0.25"
+  pad="0.5"
   outputorder=edgesfirst
   bgcolor=transparent
 
