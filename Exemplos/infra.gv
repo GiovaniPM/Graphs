@@ -27,8 +27,8 @@ digraph{
     "IOT Gateway"
     "resource-service"
     "state-service"
-    "DynamoDB" [shape="cylinder"]
-    "RDS" [shape="cylinder"]
+    "DynamoDB" [shape="folder"]
+    "RDS" [shape="folder"]
     "Kinesis"
   }
   subgraph clusterCustomerService {
