@@ -2,7 +2,7 @@ digraph D {
   # Example of a directed graph.
   # Click "next example" button for more examples.
   # "digraph" is the default graph type.
-  # Attributes in here apply to the graph itself.
+    # Attributes in here apply to the graph itself.
   pad="0.5"
   outputorder=edgesfirst
   bgcolor=transparent
@@ -29,6 +29,7 @@ digraph D {
 
   # Uncomment this to hide labels
   #node [ label="" ]
+  
   # Uncomment this to arrange nodes in a grid
   #layout=osage  edge [style=invis]
 
