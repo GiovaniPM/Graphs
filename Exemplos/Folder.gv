@@ -1,19 +1,28 @@
 digraph a {
-  node [fontname = "Handlee" shape=folder];
+  node [fontname = "Handlee"
+        shape="folder"
+        style="filled,bold"
+        color="black"
+        fillcolor="lightgray"
+        fontname="Inter"];
   edge [];
 
-  "/";
-  "/boot";
-  "/home";
-  "/usr";
-  "/var";
-  "/frank";
-  "/peter";
+  a [label="~/"];
+  b [label="<projects dir>/"];
+  c [label="..."];
+  d [label="<repository>/"];
+  e [label="..."];
+  f [label=".bash_aliases\n.bash_history\n.bash_profile\n.bashrc\n.gitconfig\n.gitignore\ndownload.sh\nupload.sh\n..."
+     shape="plaintext"
+     style=""]
+  g [label="setup.sh\n..."
+     shape="plaintext"
+     style=""]
 
-  "/" -> "/boot";
-  "/" -> "/home";
-  "/" -> "/usr";
-  "/" -> "/var";
-  "/home" -> "/frank";
-  "/home" -> "/peter";
+  a -> b;
+  a -> c;
+  b -> d;
+  b -> e;
+  a -> f;
+  d -> g;
 }
