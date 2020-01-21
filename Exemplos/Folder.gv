@@ -1,4 +1,6 @@
 digraph a {
+  pad=0.25;
+
   node [fontname = "Handlee"
         shape="folder"
         style="filled,bold"
@@ -7,11 +9,11 @@ digraph a {
         fontname="Inter"];
   edge [];
 
-  a [label="~/"];
-  b [label="<projects dir>/"];
-  c [label=".../"];
-  d [label="<repository>/"];
-  e [label=".../"];
+  a [label="~"];
+  b [label="<projects dir>"];
+  c [label="..."];
+  d [label="<repository>"];
+  e [label="..."];
   f [label=".bash_aliases\n.bash_history\n.bash_profile\n.bashrc\n.gitconfig\n.gitignore\ndownload.sh\nupload.sh\n..."
      shape="plaintext"
      style=""]
