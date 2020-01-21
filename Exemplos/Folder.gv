@@ -1,0 +1,19 @@
+digraph a {
+  node [fontname = "Handlee" shape=folder];
+  edge [];
+
+  "/";
+  "/boot";
+  "/home";
+  "/usr";
+  "/var";
+  "/frank";
+  "/peter";
+
+  "/" -> "/boot";
+  "/" -> "/home";
+  "/" -> "/usr";
+  "/" -> "/var";
+  "/home" -> "/frank";
+  "/home" -> "/peter";
+}
