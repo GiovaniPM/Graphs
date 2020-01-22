@@ -7,28 +7,29 @@ digraph a {
         color="black"
         fillcolor="lightgray"
         fontname="Inter"];
-  edge [];
+
+  edge [dir="none"];
 
   a [label="~"];
   b [label="<projects dir>"];
   c [label="..."];
   d [label="<repository>"];
   e [label="..."];
-  f [label=".bash_aliases\n.bash_history\n.bash_profile\n.bashrc\n.gitconfig\n.gitignore\ndownload.sh\nupload.sh\n..."
+  f [label=<<font color='black' point-size='7'><i>.bash_aliases<br/>.bash_history<br/>.bash_profile<br/>.bashrc<br/>.gitconfig<br/>.gitignore<br/>download.sh<br/>upload.sh<br/>...</i></font>>
      shape="plaintext"
      style=""]
-  g [label="..."
+  g [label=<<font color='black' point-size='7'><i>...</i></font>>
      shape="plaintext"
      style=""]
-  h [label="setup.sh\n..."
+  h [label=<<font color='black' point-size='7'><i>setup.sh<br/>...</i></font>>
      shape="plaintext"
      style=""]
 
   a -> b;
   a -> c;
+  a -> f;
   b -> d;
   b -> e;
-  a -> f;
   b -> g;
   d -> h;
 }
