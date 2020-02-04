@@ -1,4 +1,5 @@
 digraph {
+    rankdir = TB;
     fontname="helvetica";
     layout="dot";
 
@@ -16,4 +17,5 @@ digraph {
     500 -> 200 [color=red label="Rejeitou" fontcolor=red];
     500 -> 700 [color=green label="Aceitou" fontcolor=green];
     700 -> 999 [label="Recebeu"];
+    #{rank = same; branco; 500; 700; 999};
 }
