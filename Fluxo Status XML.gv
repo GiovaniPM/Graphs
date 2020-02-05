@@ -1,6 +1,6 @@
 digraph {
     rankdir = TB;
-    fontname="helvetica";
+    fontname="Helvetica";
     layout="dot";
 
     000 [style=none   color=gray  fontcolor=black label="branco\nimportado"];
