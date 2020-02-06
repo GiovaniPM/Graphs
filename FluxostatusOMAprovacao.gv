@@ -16,11 +16,11 @@ digraph {
         110;
         120;
     }
-    100 -> 110 [color="blue" label="Entrada"];
-    110 -> 120 [label="Aprovado"];
-    110 -> 110 [label="Rejeitado"];
-    980 -> 999 [label="Cancelado"];
-    120 -> 999 [color="green" label="Gerado O3"];
-    110 -> 980 [color="red" style=dotted arrowhead=none];
-    120 -> 980 [color="red" style=dotted arrowhead=none];
+    100 -> 110 [color="blue"      label="Entrada"            ];
+    110 -> 120 [label="Aprovado"                             ];
+    110 -> 110 [label="Rejeitado"                            ];
+    980 -> 999 [label="Cancelado"                            ];
+    120 -> 999 [color="green"     label="Gerado O3"          ];
+    110 -> 980 [color="red"       style=dotted arrowhead=none];
+    120 -> 980 [color="red"       style=dotted arrowhead=none];
 }
