@@ -10,11 +10,11 @@ digraph a {
 
   edge [dir="none"];
 
-  a [color=none fillcolor="#4287f5:#c9deff" label="~"              ];
-  b [color=none fillcolor="#4287f5:#c9deff" label="<projects dir>" ];
-  c [color=none fillcolor="#4287f5:#c9deff" label="..."            ];
-  d [color=none fillcolor="#4287f5:#c9deff" label="<repository>"   ];
-  e [color=none fillcolor="#4287f5:#c9deff" label="..."            ];
+  a [color="#140f85" fillcolor="#4287f5:#c9deff" label="~"              ];
+  b [color="#140f85" fillcolor="#4287f5:#c9deff" label="<projects dir>" ];
+  c [color="#140f85" fillcolor="#4287f5:#c9deff" label="..."            ];
+  d [color="#140f85" fillcolor="#4287f5:#c9deff" label="<repository>"   ];
+  e [color="#140f85" fillcolor="#4287f5:#c9deff" label="..."            ];
   f [label=<<font color='#140f85' point-size='7'><i>.bash_aliases<br/>.bash_history<br/>.bash_profile<br/>.bashrc<br/>.gitconfig<br/>.gitignore<br/>download.sh<br/>upload.sh<br/>...</i></font>>
      shape="plaintext"
      style=""]
@@ -25,11 +25,11 @@ digraph a {
      shape="plaintext"
      style=""]
 
-  a -> b [color="#4287f5"];
-  a -> c [color="#4287f5"];
-  a -> f [color="#4287f5"];
-  b -> d [color="#4287f5"];
-  b -> e [color="#4287f5"];
-  b -> g [color="#4287f5"];
-  d -> h [color="#4287f5"];
+  a -> b [color="#140f85"];
+  a -> c [color="#140f85"];
+  a -> f [color="#140f85"];
+  b -> d [color="#140f85"];
+  b -> e [color="#140f85"];
+  b -> g [color="#140f85"];
+  d -> h [color="#140f85"];
 }
