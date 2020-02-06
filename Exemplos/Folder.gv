@@ -15,13 +15,13 @@ digraph a {
   c [color=none fillcolor="#4287f5:#c9deff" label="..."            ];
   d [color=none fillcolor="#4287f5:#c9deff" label="<repository>"   ];
   e [color=none fillcolor="#4287f5:#c9deff" label="..."            ];
-  f [label=<<font color='black' point-size='7'><i>.bash_aliases<br/>.bash_history<br/>.bash_profile<br/>.bashrc<br/>.gitconfig<br/>.gitignore<br/>download.sh<br/>upload.sh<br/>...</i></font>>
+  f [label=<<font color='#140f85' point-size='7'><i>.bash_aliases<br/>.bash_history<br/>.bash_profile<br/>.bashrc<br/>.gitconfig<br/>.gitignore<br/>download.sh<br/>upload.sh<br/>...</i></font>>
      shape="plaintext"
      style=""]
-  g [label=<<font color='black' point-size='7'><i>...</i></font>>
+  g [label=<<font color='#140f85' point-size='7'><i>...</i></font>>
      shape="plaintext"
      style=""]
-  h [label=<<font color='black' point-size='7'><i>setup.sh<br/>...</i></font>>
+  h [label=<<font color='#140f85' point-size='7'><i>setup.sh<br/>...</i></font>>
      shape="plaintext"
      style=""]
 
