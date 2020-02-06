@@ -11,14 +11,22 @@ digraph G {
         fontsize = 8
     ]
     Animal [
+        style=filled
+        fillcolor="#4287f5:#c9deff"
         label = "{Animal|+ name : string\l+ age : int\l|+ birth() : void\l+ die() : void\l}"
     ]
     subgraph clusterAnimalImpl {
         label = "Package animal.impl"
+        style=filled
+        fillcolor="#4287f5:#c9deff"
         Dog [
+            style=filled
+            fillcolor="white:#fcba03"
             label = "{Dog||+ bark() : void\l}"
         ]
         Cat [
+            style=filled
+            fillcolor="white:#fcba03"
             label = "{Cat||+ meow() : void\l}"
         ]
     }
