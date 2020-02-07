@@ -7,7 +7,7 @@ digraph {
     200 [style=filled color=red   fontcolor=white label="=200\nerrado"     ];
     500 [style=filled color=blue  fontcolor=white label="=500\nvinculado"  ];
     700 [style=filled color=green fontcolor=black label="=700\naceito"     ];
-    999 [style=filled color=black fontcolor=white label="=999\nfinalizado" ];   
+    999 [style=filled color=black fontcolor=white label="=999\nfinalizado" ];
 
     000 -> 200 [color=red   label="Errou"       fontcolor=red   ];
     000 -> 500 [color=blue  label="Vinculou"    fontcolor=blue  ];
