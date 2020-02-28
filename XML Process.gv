@@ -104,10 +104,10 @@ digraph R {
     node002 -> node003
     node003 -> node010
     node010 -> node011 [fontname = "Arial", fontsize = 8, color="green", label="Sim"]
-    node011 -> node004 [fontname = "Arial", fontsize = 8, color="green", label="Sim"]
     node010 -> node012 [fontname = "Arial", fontsize = 8, color="red", label="Não"]
-    node004 -> node008
+    node011 -> node004 [fontname = "Arial", fontsize = 8, color="green", label="Sim"]
     node011 -> node005 [fontname = "Arial", fontsize = 8, color="red", label="Não"]
+    node004 -> node008
     node012 -> node007 [fontname = "Arial", fontsize = 8, color="green", label="Sim"]
     node012 -> node006 [fontname = "Arial", fontsize = 8, color="red", label="Não"]
     node008 -> nodefin
