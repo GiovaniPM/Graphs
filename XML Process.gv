@@ -19,7 +19,7 @@ digraph R {
                 shape=record,
                 style="rounded,filled",
                 fillcolor="white:lightblue"
-                label="002|{Carrega XML|Insere campos|F55XML01\nF55XML06}"
+                label="002|{Carrega XML||F55XML01\nF55XML06}"
             ]
     node003 [
                 fontname = "Arial",
@@ -59,7 +59,7 @@ digraph R {
                 shape=record,
                 style="rounded,filled",
                 fillcolor="white:lightblue"
-                label="007|{Incluir cancelamento|Coloca '998' no\ncampo Z55XML04\ne 'CAN' em 55ESTC|F55XML02\nF55XML03}"
+                label="007|{Incluir cancelamento|Insere '998' no\ncampo Z55XML04\ne 'CAN' em 55ESTC|F55XML02\nF55XML03}"
             ]
     node008 [
                 fontname = "Arial",
@@ -103,13 +103,13 @@ digraph R {
     node001 -> node002
     node002 -> node003
     node003 -> node010
-    node010 -> node011 [fontname = "Arial", fontsize = 8, fontcolor="green", color="green", label="Sim"]
-    node010 -> node012 [fontname = "Arial", fontsize = 8, fontcolor="red", color="red", label="Não"]
-    node011 -> node004 [fontname = "Arial", fontsize = 8, fontcolor="green", color="green", label="Sim"]
-    node011 -> node005 [fontname = "Arial", fontsize = 8, fontcolor="red", color="red", label="Não"]
+    node010 -> node011 [fontname = "Arial", fontsize = 8, fontcolor="green", color="green:orange:green", label="Sim"]
+    node010 -> node012 [fontname = "Arial", fontsize = 8, fontcolor="red", color="red:orange:red", label="Não"]
+    node011 -> node004 [fontname = "Arial", fontsize = 8, fontcolor="green", color="green:orange:green", label="Sim"]
+    node011 -> node005 [fontname = "Arial", fontsize = 8, fontcolor="red", color="red:orange:red", label="Não"]
     node004 -> node008
-    node012 -> node007 [fontname = "Arial", fontsize = 8, fontcolor="green", color="green", label="Sim"]
-    node012 -> node006 [fontname = "Arial", fontsize = 8, fontcolor="red", color="red", label="Não"]
+    node012 -> node007 [fontname = "Arial", fontsize = 8, fontcolor="green", color="green:orange:green", label="Sim"]
+    node012 -> node006 [fontname = "Arial", fontsize = 8, fontcolor="red", color="red:orange:red", label="Não"]
     node008 -> nodefin
     node006 -> nodefin
     node005 -> nodefin
