@@ -2,7 +2,7 @@ digraph R {
     nodeini [
                 shape=circle,
                 style="filled",
-                fillcolor="white:green",
+                fillcolor="white:lightgreen",
                 label=""
             ]
     node001 [
@@ -10,7 +10,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:#fcba03"
+                fillcolor="white:lightblue"
                 label="001|{Pega Ref NF|Pego a tag\n ID do XML|}"
             ]
     node002 [
@@ -18,7 +18,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:#fcba03"
+                fillcolor="white:lightblue"
                 label="002|{Carrega XML|Insere campos|F55XML01\nF55XML06}"
             ]
     node003 [
@@ -26,7 +26,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:#fcba03"
+                fillcolor="white:lightblue"
                 label="003|{Procuro NF|Com a Ref NF procuro\nno campo 55EREF e\nretorno o Z55XML01|F55XML02}"
             ]
     node004 [
@@ -34,7 +34,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:#fcba03"
+                fillcolor="white:lightblue"
                 label="004|{Altera Status|Insere '998' no\ncampo Z55XML04|F55XML03}"
             ]
     node005 [
@@ -42,7 +42,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:#fcba03"
+                fillcolor="white:lightblue"
                 label="005|{Altera Campos|Altera campos, menos\n55ESTC e Z55XML04|F55XML02\nF55XML03}"
             ]
     node006 [
@@ -50,7 +50,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:#fcba03"
+                fillcolor="white:lightblue"
                 label="006|{Incluir tudo||F55XML02\nF55XML03}"
             ]
     node007 [
@@ -58,7 +58,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:#fcba03"
+                fillcolor="white:lightblue"
                 label="007|{Incluir cancelamento|Coloca '998' no\ncampo Z55XML04|F55XML02\nF55XML03}"
             ]
     node008 [
@@ -66,13 +66,13 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:#fcba03"
+                fillcolor="white:lightblue"
                 label="008|{Apagar detalhe|Z55XML01 = ID do XML|F55XML05}"
             ]
     node010 [
                 fontname = "Arial",
                 fontsize = 8,
-                fillcolor="white:yellow",
+                fillcolor="white:#f5cc7f",
                 style="filled",
                 shape=diamond
                 label="Achou"
@@ -80,7 +80,7 @@ digraph R {
     node011 [
                 fontname = "Arial",
                 fontsize = 8,
-                fillcolor="white:yellow",
+                fillcolor="white:#f5cc7f",
                 style="filled",
                 shape=diamond
                 label="Cancelamento"
@@ -88,7 +88,7 @@ digraph R {
     node012 [
                 fontname = "Arial",
                 fontsize = 8,
-                fillcolor="white:yellow",
+                fillcolor="white:#f5cc7f",
                 style="filled",
                 shape=diamond
                 label="Cancelamento"
@@ -96,20 +96,20 @@ digraph R {
     nodefin [
                 shape=circle,
                 style="filled",
-                fillcolor="white:red",
+                fillcolor="white:#ee636e",
                 label=""
             ]
     nodeini -> node001
     node001 -> node002
     node002 -> node003
     node003 -> node010
-    node010 -> node011 [fontname = "Arial", fontsize = 8, color="green", label="Sim"]
-    node010 -> node012 [fontname = "Arial", fontsize = 8, color="red", label="Não"]
-    node011 -> node004 [fontname = "Arial", fontsize = 8, color="green", label="Sim"]
-    node011 -> node005 [fontname = "Arial", fontsize = 8, color="red", label="Não"]
+    node010 -> node011 [fontname = "Arial", fontsize = 8, fontcolor="green", color="green", label="Sim"]
+    node010 -> node012 [fontname = "Arial", fontsize = 8, fontcolor="red", color="red", label="Não"]
+    node011 -> node004 [fontname = "Arial", fontsize = 8, fontcolor="green", color="green", label="Sim"]
+    node011 -> node005 [fontname = "Arial", fontsize = 8, fontcolor="red", color="red", label="Não"]
     node004 -> node008
-    node012 -> node007 [fontname = "Arial", fontsize = 8, color="green", label="Sim"]
-    node012 -> node006 [fontname = "Arial", fontsize = 8, color="red", label="Não"]
+    node012 -> node007 [fontname = "Arial", fontsize = 8, fontcolor="green", color="green", label="Sim"]
+    node012 -> node006 [fontname = "Arial", fontsize = 8, fontcolor="red", color="red", label="Não"]
     node008 -> nodefin
     node006 -> nodefin
     node005 -> nodefin
