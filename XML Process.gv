@@ -35,7 +35,7 @@ digraph R {
                 shape=record,
                 style="rounded,filled",
                 fillcolor="white:lightblue"
-                label="004|{Altera Status|Insere '998' no\ncampo Z55XML04|F55XML03}"
+                label="004|{Altera Status|Coloca '998' no\ncampo Z55XML04\ne 'CAN' em 55ESTC|F55XML02\nF55XML03}"
             ]
     node005 [
                 fontname = "Arial",
@@ -59,7 +59,7 @@ digraph R {
                 shape=record,
                 style="rounded,filled",
                 fillcolor="white:lightblue"
-                label="007|{Incluir cancelamento|Coloca '998' no\ncampo Z55XML04|F55XML02\nF55XML03}"
+                label="007|{Incluir cancelamento|Coloca '998' no\ncampo Z55XML04\ne 'CAN' em 55ESTC|F55XML02\nF55XML03}"
             ]
     node008 [
                 fontname = "Arial",
