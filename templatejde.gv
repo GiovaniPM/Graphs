@@ -1,0 +1,45 @@
+digraph R {
+    rankdir=TB
+    nodeini [
+                shape=circle,
+                style="filled",
+                fillcolor="white:lightgreen",
+                label=""
+            ]
+    node001 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="rounded,filled",
+                fillcolor="white:lightblue"
+                label="Seq|{Resume Process|Line 1\nLine 2|Object Interface}"
+            ]
+    node002 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="filled",
+                fillcolor="white:lightgray"
+                label="Seq|{Attribution 1\nAttribution 2}"
+            ]
+    node003 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="diagonals,filled",
+                fillcolor="white:#fbfbb1"
+                label="Seq|{Question line 1\nQuestion line 2}"
+            ]
+    nodeint [
+                shape=doublecircle,
+                style="filled",
+                fillcolor="white:#fa5cfa",
+                label=""
+            ]
+    nodefin [
+                shape=circle,
+                style="filled",
+                fillcolor="white:#ee636e",
+                label=""
+            ]
+}

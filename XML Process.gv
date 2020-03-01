@@ -72,25 +72,25 @@ digraph R {
     node010 [
                 fontname = "Arial",
                 fontsize = 8,
-                fillcolor="white:#f5cc7f",
-                style="filled",
-                shape=diamond
+                shape=record,
+                style="diagonals,filled",
+                fillcolor="white:#fbfbb1"
                 label="Achou"
             ]
     node011 [
                 fontname = "Arial",
                 fontsize = 8,
-                fillcolor="white:#f5cc7f",
-                style="filled",
-                shape=diamond
+                shape=record,
+                style="diagonals,filled",
+                fillcolor="white:#fbfbb1"
                 label="Cancelamento"
             ]
     node012 [
                 fontname = "Arial",
                 fontsize = 8,
-                fillcolor="white:#f5cc7f",
-                style="filled",
-                shape=diamond
+                shape=record,
+                style="diagonals,filled",
+                fillcolor="white:#fbfbb1"
                 label="Cancelamento"
             ]
     nodefin [
