@@ -1,5 +1,4 @@
 digraph R {
-    rankdir=TB
     nodeini [
                 shape=circle,
                 style="filled",
@@ -30,11 +29,41 @@ digraph R {
                 fillcolor="white:#fbfbb1"
                 label="Seq|{Question line 1\nQuestion line 2}"
             ]
+    node004 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape = none,
+                style=invisible
+                label=""
+            ]
+    node005 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape = none,
+                style=invisible
+                label=""
+            ]
+    node006 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape = none,
+                style=invisible
+                label=""
+            ]
+    node007 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape = none,
+                style=invisible
+                label=""
+            ]
     nodeint [
-                shape=doublecircle,
+                fontname = "Arial",
+                fontsize = 6,
+                shape=ellipse,
                 style="filled",
                 fillcolor="white:#fa5cfa",
-                label=""
+                label="Subdiagram"
             ]
     nodefin [
                 shape=circle,
@@ -42,4 +71,6 @@ digraph R {
                 fillcolor="white:#ee636e",
                 label=""
             ]
+    node004 -> node005 [fontname = "Arial", fontsize = 12, fontcolor="green", color="green:yellow:green", label="Sim"]
+    node006 -> node007 [fontname = "Arial", fontsize = 12, fontcolor="red", color="red:yellow:red", label="Não"]
 }

@@ -75,7 +75,7 @@ digraph R {
                 shape=record,
                 style="diagonals,filled",
                 fillcolor="white:#fbfbb1"
-                label="Achou"
+                label="010|Achou"
             ]
     node011 [
                 fontname = "Arial",
@@ -83,7 +83,7 @@ digraph R {
                 shape=record,
                 style="diagonals,filled",
                 fillcolor="white:#fbfbb1"
-                label="Cancelamento"
+                label="011|Cancelamento"
             ]
     node012 [
                 fontname = "Arial",
@@ -91,7 +91,7 @@ digraph R {
                 shape=record,
                 style="diagonals,filled",
                 fillcolor="white:#fbfbb1"
-                label="Cancelamento"
+                label="012|Cancelamento"
             ]
     nodefin [
                 shape=circle,
@@ -103,13 +103,13 @@ digraph R {
     node001 -> node002
     node002 -> node003
     node003 -> node010
-    node010 -> node011 [fontname = "Arial", fontsize = 8, fontcolor="green", color="green:orange:green", label="Sim"]
-    node010 -> node012 [fontname = "Arial", fontsize = 8, fontcolor="red", color="red:orange:red", label="Não"]
-    node011 -> node004 [fontname = "Arial", fontsize = 8, fontcolor="green", color="green:orange:green", label="Sim"]
-    node011 -> node005 [fontname = "Arial", fontsize = 8, fontcolor="red", color="red:orange:red", label="Não"]
+    node010 -> node011 [fontname = "Arial", fontsize = 12, fontcolor="green", color="green:yellow:green", label="Sim"]
+    node010 -> node012 [fontname = "Arial", fontsize = 12, fontcolor="red", color="red:yellow:red", label="Não"]
+    node011 -> node004 [fontname = "Arial", fontsize = 12, fontcolor="green", color="green:yellow:green", label="Sim"]
+    node011 -> node005 [fontname = "Arial", fontsize = 12, fontcolor="red", color="red:yellow:red", label="Não"]
     node004 -> node008
-    node012 -> node007 [fontname = "Arial", fontsize = 8, fontcolor="green", color="green:orange:green", label="Sim"]
-    node012 -> node006 [fontname = "Arial", fontsize = 8, fontcolor="red", color="red:orange:red", label="Não"]
+    node012 -> node007 [fontname = "Arial", fontsize = 12, fontcolor="green", color="green:yellow:green", label="Sim"]
+    node012 -> node006 [fontname = "Arial", fontsize = 12, fontcolor="red", color="red:yellow:red", label="Não"]
     node008 -> nodefin
     node006 -> nodefin
     node005 -> nodefin
