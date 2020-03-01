@@ -11,7 +11,7 @@ digraph R {
                 shape=record,
                 style="rounded,filled",
                 fillcolor="white:lightblue"
-                label="001|{Pega Ref NF|Pego a tag\n ID do XML|}"
+                label="001|{Pegar Ref NF|Pego a tag\n ID do XML|}"
             ]
     node002 [
                 fontname = "Arial",
@@ -19,7 +19,7 @@ digraph R {
                 shape=record,
                 style="rounded,filled",
                 fillcolor="white:lightblue"
-                label="002|{Carrega XML||F55XML01\nF55XML06}"
+                label="002|{Carregar XML||F55XML01\nF55XML06}"
             ]
     node003 [
                 fontname = "Arial",
@@ -27,7 +27,7 @@ digraph R {
                 shape=record,
                 style="rounded,filled",
                 fillcolor="white:lightblue"
-                label="003|{Procuro NF|Com a Ref NF procuro\nno campo 55EREF e\nretorno o Z55XML01|F55XML02}"
+                label="003|{Procurar NF|Com a Ref NF procuro\nno campo 55EREF e\nretorno o Z55XML01|F55XML02}"
             ]
     node004 [
                 fontname = "Arial",
@@ -35,7 +35,7 @@ digraph R {
                 shape=record,
                 style="rounded,filled",
                 fillcolor="white:lightblue"
-                label="004|{Altera Status|Coloca '998' no\ncampo Z55XML04\ne 'CAN' em 55ESTC|F55XML02\nF55XML03}"
+                label="004|{Alterar Status|Coloca '998' no\ncampo Z55XML04\ne 'CAN' em 55ESTC|F55XML02\nF55XML03}"
             ]
     node005 [
                 fontname = "Arial",
@@ -43,7 +43,7 @@ digraph R {
                 shape=record,
                 style="rounded,filled",
                 fillcolor="white:lightblue"
-                label="005|{Altera Campos|Altera campos, menos\n55ESTC e Z55XML04|F55XML02\nF55XML03}"
+                label="005|{Alterar Campos|Altera campos, menos\n55ESTC e Z55XML04|F55XML02\nF55XML03}"
             ]
     node006 [
                 fontname = "Arial",
@@ -67,7 +67,7 @@ digraph R {
                 shape=record,
                 style="rounded,filled",
                 fillcolor="white:lightblue"
-                label="008|{Apagar detalhe|Z55XML01 = ID do XML|F55XML05}"
+                label="008|{Apagar pedido vinculado|Z55XML01 = ID do XML|F55XML05}"
             ]
     node010 [
                 fontname = "Arial",
