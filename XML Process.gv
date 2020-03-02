@@ -43,7 +43,7 @@ digraph R {
                 shape=record,
                 style="rounded,filled",
                 fillcolor="white:lightblue"
-                label="005|{Alterar Campos|Altera campos, menos\n55ESTC e Z55XML04|F55XML02\nF55XML03}"
+                label="005|{Alterar Campo|55ESTC = 'CAN'|F55XML02}"
             ]
     node006 [
                 fontname = "Arial",
@@ -93,6 +93,14 @@ digraph R {
                 fillcolor="white:#fbfbb1"
                 label="012|Cancelamento"
             ]
+    node013 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="rounded,filled",
+                fillcolor="white:lightblue"
+                label="013|{Incluir Campos|Conforme mapeamento\ne Z55XML04 = '998'|F55XML03}"
+            ]
     nodefin [
                 shape=circle,
                 style="filled",
@@ -112,6 +120,7 @@ digraph R {
     node012 -> node006 [fontname = "Arial", fontsize = 12, fontcolor="red", color="red:yellow:red", label="Não"]
     node008 -> nodefin
     node006 -> nodefin
-    node005 -> nodefin
+    node005 -> node013
+    node013 -> nodefin
     node007 -> nodefin
 }
