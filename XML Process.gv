@@ -101,6 +101,30 @@ digraph R {
                 fillcolor="white:lightblue"
                 label="013|{Incluir Campos|Conforme mapeamento\ne Z55XML04 = '998'|F55XML03}"
             ]
+    node014 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="diagonals,filled",
+                fillcolor="white:#fbfbb1"
+                label="014|Recebido"
+            ]
+    node015 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="rounded,filled",
+                fillcolor="white:lightblue"
+                label="015|{Determinar recebimento|Se alguma linha estiver com\nZ55XML04 = '999'|F55XML03}"
+            ]
+    node016 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="rounded,filled",
+                fillcolor="white:lightblue"
+                label="016|{Alterar Status|Coloca 'CAP' no\ncampo 55ESTC|F55XML02}"
+            ]
     nodefin [
                 shape=circle,
                 style="filled",
@@ -113,7 +137,7 @@ digraph R {
     node003 -> node010
     node010 -> node011 [fontname = "Arial", fontsize = 12, fontcolor="green", color="green:yellow:green", label="Sim"]
     node010 -> node012 [fontname = "Arial", fontsize = 12, fontcolor="red", color="red:yellow:red", label="Não"]
-    node011 -> node004 [fontname = "Arial", fontsize = 12, fontcolor="green", color="green:yellow:green", label="Sim"]
+    node011 -> node015 [fontname = "Arial", fontsize = 12, fontcolor="green", color="green:yellow:green", label="Sim"]
     node011 -> node005 [fontname = "Arial", fontsize = 12, fontcolor="red", color="red:yellow:red", label="Não"]
     node004 -> node008
     node012 -> node007 [fontname = "Arial", fontsize = 12, fontcolor="green", color="green:yellow:green", label="Sim"]
@@ -121,6 +145,10 @@ digraph R {
     node008 -> nodefin
     node006 -> nodefin
     node005 -> node013
+    node015 -> node014
     node013 -> nodefin
+    node014 -> node016 [fontname = "Arial", fontsize = 12, fontcolor="green", color="green:yellow:green", label="Sim"]
+    node014 -> node004 [fontname = "Arial", fontsize = 12, fontcolor="red", color="red:yellow:red", label="Não"]
+    node016 -> nodefin
     node007 -> nodefin
 }
