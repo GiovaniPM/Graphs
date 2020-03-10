@@ -43,7 +43,7 @@ digraph R {
                 shape=record,
                 style="rounded,filled",
                 fillcolor="white:lightblue"
-                label="005|{Alterar Campo|55ESTC = 'CAN'|F55XML02}"
+                label="005|{Alterar Campo|Conforme mapeamento\ne 55ESTC = 'CAN'|F55XML02}"
             ]
     node006 [
                 fontname = "Arial",
