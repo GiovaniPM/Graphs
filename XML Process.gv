@@ -142,13 +142,13 @@ digraph R {
     node004 -> node008
     node012 -> node007 [fontname = "Arial", fontsize = 12, fontcolor="green", color="green:yellow:green", label="Sim"]
     node012 -> node006 [fontname = "Arial", fontsize = 12, fontcolor="red", color="red:yellow:red", label="Não"]
-    node008 -> nodefin
-    node006 -> nodefin
     node005 -> node013
     node015 -> node014
-    node013 -> nodefin
     node014 -> node016 [fontname = "Arial", fontsize = 12, fontcolor="green", color="green:yellow:green", label="Sim"]
     node014 -> node004 [fontname = "Arial", fontsize = 12, fontcolor="red", color="red:yellow:red", label="Não"]
+    node013 -> nodefin
+    node008 -> nodefin
+    node006 -> nodefin
     node016 -> nodefin
     node007 -> nodefin
 }
