@@ -2,15 +2,15 @@ digraph R {
 
     # layout= specifies a layout engine:
     #   circo — for circular layout of graphs
-    #   dot — for drawing directed graphs (the default)
-    #   fdp — for drawing undirected graphs
+    #   dot   — for drawing directed graphs (the default)
+    #   fdp   — for drawing undirected graphs
     #   neato — for drawing undirected graphs
     #   osage — for drawing large undirected graphs
     #   twopi — for radial layouts of graphs
     #layout=circo
 
     node001 [
-                fontname = "Courrier",
+                fontname = "Helvetica",
                 fontsize = 8,
                 shape=record,
                 style="none",
@@ -20,7 +20,7 @@ digraph R {
                                              <col03>TDAY:Hora Captura\l}"
             ]
     node002 [
-                fontname = "Courrier",
+                fontname = "Helvetica",
                 fontsize = 8,
                 shape=record,
                 style="none",
@@ -57,7 +57,7 @@ digraph R {
                            Cancelado Provisório\l|}"
             ]
     node004 [
-                fontname = "Courrier",
+                fontname = "Helvetica",
                 fontsize = 8,
                 shape=record,
                 style="none",
@@ -111,7 +111,7 @@ digraph R {
                            Ordem de Compra\l"
             ]
     node007 [
-                fontname = "Courrier",
+                fontname = "Helvetica",
                 fontsize = 8,
                 shape=record,
                 style="none",
@@ -130,7 +130,7 @@ digraph R {
                                                <col12>CMARTMES:UOM no XML (3 casas)\l}"
             ]
     node008 [
-                fontname = "Courrier",
+                fontname = "Helvetica",
                 fontsize = 8,
                 shape=record,
                 style="none",
@@ -160,7 +160,7 @@ digraph R {
                            Recebido\l|"
             ]
     node010 [
-                fontname = "Courrier",
+                fontname = "Helvetica",
                 fontsize = 8,
                 shape=record,
                 style="none",
@@ -179,16 +179,16 @@ digraph R {
                                             <col12>AEXP:Valor Total Usado no Pedido\l}"
             ]
 
-    node001:col01 -> node002:col01;
+    node001:col01 -> node002:col01 [color="blue"]
+    node001:col01 -> node004:col01 [color="blue"]
+    node001:col01 -> node007:col01 [color="blue"]
     node002:col11 -> node003 [style="dotted"]
-    node001:col01 -> node004:col01;
     node004:col02 -> node005 [style="dotted"]
     node002:col03 -> node006 [style="dotted"]
-    node001:col01 -> node007:col01;
-    node002:col01 -> node008:col01;
-    node007:col01 -> node008:col01;
-    node007:col02 -> node008:col02;
+    node002:col01 -> node008:col01 [color="red"]
+    node007:col01 -> node008:col01 [color="green"]
+    node007:col02 -> node008:col02 [color="green"]
+    node007:col01 -> node010:col01 [color="green"]
+    node007:col02 -> node010:col02 [color="green"]
     node007:col04 -> node009 [style="dotted"]
-    node007:col01 -> node010:col01;
-    node007:col02 -> node010:col02;
 }
