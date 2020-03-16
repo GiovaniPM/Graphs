@@ -65,6 +65,8 @@ digraph H {
        <tr><td port='col02' bgcolor="lightblue"><font face="helvetica" color="blue">Z55XMl02</font></td><td>Linha XML</td><td>Numeric (15)</td></tr>
        <tr><td port='col03' bgcolor="lightgray"><font face="helvetica" color="black">LNID</font></td><td>Ordem</td><td>Numeric (6,3)</td></tr>
        <tr><td port='col04' bgcolor="lightgray"><font face="helvetica" color="black">DL011</font></td><td>Descrição</td><td>String (100)</td></tr>
+       <tr><td port='col04' bgcolor="lightgray"><font face="helvetica" color="black">SUFRPATH</font></td><td>Auxiliar 1</td><td>String (255)</td></tr>
+       <tr><td port='col04' bgcolor="lightgray"><font face="helvetica" color="black">SUTOPATH</font></td><td>Auxiliar 2</td><td>String (255)</td></tr>
      </table>
   >];
 
