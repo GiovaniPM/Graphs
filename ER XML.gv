@@ -182,13 +182,16 @@ digraph R {
     node001:col01 -> node002:col01 [color="blue"]
     node001:col01 -> node004:col01 [color="blue"]
     node001:col01 -> node007:col01 [color="blue"]
-    node002:col11 -> node003 [style="dotted"]
-    node004:col02 -> node005 [style="dotted"]
-    node002:col03 -> node006 [style="dotted"]
     node002:col01 -> node008:col01 [color="red"]
     node007:col01 -> node008:col01 [color="green"]
     node007:col02 -> node008:col02 [color="green"]
     node007:col01 -> node010:col01 [color="green"]
     node007:col02 -> node010:col02 [color="green"]
+    node002:col03 -> node006 [style="dotted"]
+    node002:col11 -> node003 [style="dotted"]
+    node004:col02 -> node005 [style="dotted"]
     node007:col04 -> node009 [style="dotted"]
+
+    { rank=same node002 node004 node007 }
+    { rank=same node001 node008 node010 }
 }
