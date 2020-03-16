@@ -57,6 +57,22 @@ digraph R {
                 style=invisible
                 label=""
             ]
+    node008 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="none",
+                fillcolor="white"
+                label="Seq|{table name|<col1>datadict:description|<col2>datadict:description}"
+            ]
+    node009 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="filled",
+                fillcolor="white:#f5c78e"
+                label="Seq|Value 1\nValue 2\nValue 3|Desc 1\nDesc 2\nDesc 3|Obs 1\nObs 2\nObs 3}"
+            ]
     nodeint [
                 fontname = "Arial",
                 fontsize = 6,

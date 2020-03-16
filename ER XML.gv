@@ -1,0 +1,188 @@
+digraph R {
+    edge [
+        arrowtail = "empty"
+    ]
+
+    node001 [
+                fontname = "Courrier",
+                fontsize = 8,
+                shape=record,
+                style="none",
+                fillcolor="white"
+                label="{001 F55XML01 (XML's)|<col01>Z55XML01:Chave XML\l|
+                                             <col02>ACTDATE:Data Captura\l|
+                                             <col03>TDAY:Hora Captura\l}"
+            ]
+    node002 [
+                fontname = "Courrier",
+                fontsize = 8,
+                shape=record,
+                style="none",
+                fillcolor="white"
+                label="{002 F55XML02 (Cabeçalho)|<col01>Z55XML01:Chave XML\l|
+                                                 <col02>55EREF:Chave da NF\l|
+                                                 <col03>55XTG:Grupo da NF\l|
+                                                 <col04>BVTN:Total da NF\l|
+                                                 <col05>ISSU:Data Emissão\l|
+                                                 <col06>BCGF:CNPJ Emitente\l|
+                                                 <col07>BCGT:CNPJ Destinatário\l|
+                                                 <col08>BCGC:CNPJ Transportador\l|
+                                                 <col09>BFRT:Valor do Frete\l|
+                                                 <col10>ADDTEXT:Texto Adicional\l|
+                                                 <col11>55ESTC:Status no XML\l|
+                                                 <col12>Z55XML05:Número NF no XML\l|
+                                                 <col13>Z55XML06:Série NF no XML\l|
+                                                 <col14>BNNF:Número NF no JDE\l|
+                                                 <col15>BSER:Série NF no JDE\l|
+                                                 <col16>N001:NN NF no JDE\l|
+                                                 <col17>DCT:Tipo NF no JDE\l}"
+            ]
+    node003 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="rounded,filled",
+                fillcolor="white:#f5c78e"
+                label="003|AUT\l
+                           CAN\l
+                           CAP\l|
+                           Autorizado\l
+                           Cancelado\l
+                           Cancelado Provisório\l|}"
+            ]
+    node004 [
+                fontname = "Courrier",
+                fontsize = 8,
+                shape=record,
+                style="none",
+                fillcolor="white"
+                label="{004 F55XML06 (Transações)|<col01>Z55XML01:Chave XML\l|
+                                                  <col02>55ESTC:Status no XML\l|
+                                                  <col03>ACTDATE:Data Captura\l|
+                                                  <col04>TDAY:Hora Captura\l|
+                                                  <col05>XMLCMPST:XML\l}"
+            ]
+    node005 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="rounded,filled",
+                fillcolor="white:#f5c78e"
+                label="005|AUT\l
+                           CAN\l|
+                           Autorizado\l
+                           Cancelado\l|"
+            ]
+    node006 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="rounded,filled",
+                fillcolor="white:#f5c78e"
+                label="006|LF-CTE\l
+                           LF-CTEOS\l
+                           LF-NFE\l
+                           LF-NFSE\l
+                           OC-CTE\l
+                           OC-CTEOS\l
+                           OC-NFE\l
+                           OC-NFSE\l|
+                           CTe - Transporte\l
+                           CTeOS - Transporte OS\l
+                           NFe - Produto\l
+                           NFSe - Serviço\l
+                           CTe - Transporte\l
+                           CTeOS - Transporte OS\l
+                           NFe - Produto\l
+                           NFSe - Serviço\l|
+                           Livro Fiscal\l
+                           Livro Fiscal\l
+                           Livro Fiscal\l
+                           Livro Fiscal\l
+                           Ordem de Compra\l
+                           Ordem de Compra\l
+                           Ordem de Compra\l
+                           Ordem de Compra\l"
+            ]
+    node007 [
+                fontname = "Courrier",
+                fontsize = 8,
+                shape=record,
+                style="none",
+                fillcolor="white"
+                label="{007 F55XML03 (Detalhe)|<col01>Z55XML01:Chave XML\l|
+                                               <col02>Z55XML02:Linha do XML\l|
+                                               <col03>Z55XML03:Número da PO no XML\l|
+                                               <col04>Z55XMl04:Status XML\l|
+                                               <col05>BRNOP:CFOP\l|
+                                               <col06>BCLF:Número NCM\l|
+                                               <col07>DESC2000:Descrição do Item  no XML\l|
+                                               <col08>UORG:Quantidade XML\l|
+                                               <col09>UOM:Unidade XML (2 casas)\l|
+                                               <col10>UPRC:Valor Unitário XML\l|
+                                               <col11>AEXP:Valor Total XML\l|
+                                               <col12>CMARTMES:UOM no XML (3 casas)\l}"
+            ]
+    node008 [
+                fontname = "Courrier",
+                fontsize = 8,
+                shape=record,
+                style="none",
+                fillcolor="white"
+                label="{008 F55XML04 (Erros)|<col01>Z55XML01:Chave XML\l|
+                                             <col02>Z55XML02:Linha do XML\l|
+                                             <col03>LNID:Ordem\l|
+                                             <col04>Dl011:Descrição do Erro\l}"
+            ]
+    node009 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="rounded,filled",
+                fillcolor="white:#f5c78e"
+                label="009|\<branco\>\l
+                           200\l
+                           500\l
+                           700\l
+                           998\l
+                           999\l|
+                           Importado\l
+                           Erro na Vinculação\l
+                           Vinculado\l
+                           Aceito\l
+                           Cencelado\l
+                           Recebido\l|"
+            ]
+    node010 [
+                fontname = "Courrier",
+                fontsize = 8,
+                shape=record,
+                style="none",
+                fillcolor="white"
+                label="{010 F55XML05 (PO's)|<col01>Z55XML01:Chave XML\l|
+                                            <col02>Z55XML02:Linha do XML\l|
+                                            <col03>MCU:Unidade PO\l|
+                                            <col04>KCOO:Cia PO\l|
+                                            <col05>DOCO:Número PO\l|
+                                            <col06>DCTO:Tipo PO\l|
+                                            <col07>SFXO:Sufixo PO\l|
+                                            <col08>LNID:Linha PO\l|
+                                            <col09>UORG:Quantidade Usada\l|
+                                            <col10>UOM:UM do PO\l|
+                                            <col11>UPRC:Valor Unitário PO\l|
+                                            <col12>AEXP:Valor Total Usado no Pedido\l}"
+            ]
+
+    node001:col01 -> node002:col01;
+    node002:col11 -> node003 [style="dotted"]
+    node001:col01 -> node004:col01;
+    node004:col02 -> node005 [style="dotted"]
+    node002:col03 -> node006 [style="dotted"]
+    node001:col01 -> node007:col01;
+    node002:col01 -> node008:col01;
+    node007:col01 -> node008:col01;
+    node007:col02 -> node008:col02;
+    node007:col04 -> node009 [style="dotted"]
+    node007:col01 -> node010:col01;
+    node007:col02 -> node010:col02;
+}
