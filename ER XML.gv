@@ -1,5 +1,14 @@
 digraph R {
 
+    # layout= specifies a layout engine:
+    #   circo — for circular layout of graphs
+    #   dot — for drawing directed graphs (the default)
+    #   fdp — for drawing undirected graphs
+    #   neato — for drawing undirected graphs
+    #   osage — for drawing large undirected graphs
+    #   twopi — for radial layouts of graphs
+    #layout=circo
+
     node001 [
                 fontname = "Courrier",
                 fontsize = 8,
