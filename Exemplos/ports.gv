@@ -5,9 +5,9 @@ digraph H {
    label=<
      <table border='0' cellborder='1' color='blue' cellspacing='0'>
        <tr><td colspan="3" bgcolor="lightyellow"><b>F55XML01</b> <i>XML's</i></td></tr>
-       <tr><td port='col01' bgcolor="lightblue"><font color="blue">Z55XML01</font></td><td>Chave XML</td><td>Numeric (15)</td></tr>
-       <tr><td port='col02' bgcolor="lightgray"><font color="black">ACTDATE</font></td><td>Data Captura</td><td>Numeric (6)</td></tr>
-       <tr><td port='col03' bgcolor="lightgray"><font color="black">TDAY</font></td><td>Hora Captura</td><td>Numeric (6)</td></tr>
+       <tr><td port='col01' bgcolor="lightblue"><font face="helvetica" color="blue">Z55XML01</font></td><td>Chave XML</td><td>Numeric (15)</td></tr>
+       <tr><td port='col02' bgcolor="lightgray"><font face="helvetica" color="black">ACTDATE</font></td><td>Data Captura</td><td>Numeric (6)</td></tr>
+       <tr><td port='col03' bgcolor="lightgray"><font face="helvetica" color="black">TDAY</font></td><td>Hora Captura</td><td>Numeric (6)</td></tr>
      </table>
   >];
 
@@ -16,23 +16,23 @@ digraph H {
    label=<
      <table border='0' cellborder='1' color='blue' cellspacing='0'>
        <tr><td colspan="3" bgcolor="lightyellow"><b>F55XML02</b> <i>Cabeçalho</i></td></tr>
-       <tr><td port='col01' bgcolor="lightblue"><font color="blue">Z55XML01</font></td><td>Chave XML</td><td>Numeric (15)</td></tr>
-       <tr><td port='col02' bgcolor="lightgray"><font color="black">55EREF</font></td><td>Chave da NF</td><td>String (44)</td></tr>
-       <tr><td port='col03' bgcolor="lightgray"><font color="black">55XTG</font></td><td>Grupo da NF</td><td>String (10)</td></tr>
-       <tr><td port='col04' bgcolor="lightgray"><font color="black">BVTN</font></td><td>Total da NF</td><td>Numeric (15,2)</td></tr>
-       <tr><td port='col05' bgcolor="lightgray"><font color="black">ISSU</font></td><td>Data Emissão</td><td>Numeric (6)</td></tr>
-       <tr><td port='col06' bgcolor="lightgray"><font color="black">BCGF</font></td><td>CNPJ Emitente</td><td>String (15)</td></tr>
-       <tr><td port='col07' bgcolor="lightgray"><font color="black">BCGT</font></td><td>CNPJ Destinatário</td><td>String (15)</td></tr>
-       <tr><td port='col08' bgcolor="lightgray"><font color="black">BCGC</font></td><td>CNPF Transportador</td><td>String (15)</td></tr>
-       <tr><td port='col09' bgcolor="lightgray"><font color="black">BFRT</font></td><td>Valor do Frete</td><td>Numeric (15,2)</td></tr>
-       <tr><td port='col10' bgcolor="lightgray"><font color="black">ADDTEXT</font></td><td>Texto Adicional</td><td>String (5000)</td></tr>
-       <tr><td port='col11' bgcolor="lightgray"><font color="black">55ESTC</font></td><td>Status no XML</td><td>String (10)</td></tr>
-       <tr><td port='col12' bgcolor="lightgray"><font color="black">Z55XML05</font></td><td>Número NF no XML</td><td>Numeric (9)</td></tr>
-       <tr><td port='col13' bgcolor="lightgray"><font color="black">Z55XML06</font></td><td>Série NF no XML</td><td>String (3)</td></tr>
-       <tr><td port='col14' bgcolor="lightgray"><font color="black">BNNF</font></td><td>Número NF no JDE</td><td>Numeric (6)</td></tr>
-       <tr><td port='col15' bgcolor="lightgray"><font color="black">BSER</font></td><td>Série NF no JDE</td><td>String (2)</td></tr>
-       <tr><td port='col16' bgcolor="lightgray"><font color="black">N001</font></td><td>NN NF no JDE</td><td>Numric (8)</td></tr>
-       <tr><td port='col17' bgcolor="lightgray"><font color="black">DCT</font></td><td>Tipo NF no JDE</td><td>String (2)</td></tr>
+       <tr><td port='col01' bgcolor="lightblue"><font face="helvetica" color="blue">Z55XML01</font></td><td>Chave XML</td><td>Numeric (15)</td></tr>
+       <tr><td port='col02' bgcolor="lightgray"><font face="helvetica" color="black">55EREF</font></td><td>Chave da NF</td><td>String (44)</td></tr>
+       <tr><td port='col03' bgcolor="lightgray"><font face="helvetica" color="black">55XTG</font></td><td>Grupo da NF</td><td>String (10)</td></tr>
+       <tr><td port='col04' bgcolor="lightgray"><font face="helvetica" color="black">BVTN</font></td><td>Total da NF</td><td>Numeric (15,2)</td></tr>
+       <tr><td port='col05' bgcolor="lightgray"><font face="helvetica" color="black">ISSU</font></td><td>Data Emissão</td><td>Numeric (6)</td></tr>
+       <tr><td port='col06' bgcolor="lightgray"><font face="helvetica" color="black">BCGF</font></td><td>CNPJ Emitente</td><td>String (15)</td></tr>
+       <tr><td port='col07' bgcolor="lightgray"><font face="helvetica" color="black">BCGT</font></td><td>CNPJ Destinatário</td><td>String (15)</td></tr>
+       <tr><td port='col08' bgcolor="lightgray"><font face="helvetica" color="black">BCGC</font></td><td>CNPF Transportador</td><td>String (15)</td></tr>
+       <tr><td port='col09' bgcolor="lightgray"><font face="helvetica" color="black">BFRT</font></td><td>Valor do Frete</td><td>Numeric (15,2)</td></tr>
+       <tr><td port='col10' bgcolor="lightgray"><font face="helvetica" color="black">ADDTEXT</font></td><td>Texto Adicional</td><td>String (5000)</td></tr>
+       <tr><td port='col11' bgcolor="lightgray"><font face="helvetica" color="black">55ESTC</font></td><td>Status no XML</td><td>String (10)</td></tr>
+       <tr><td port='col12' bgcolor="lightgray"><font face="helvetica" color="black">Z55XML05</font></td><td>Número NF no XML</td><td>Numeric (9)</td></tr>
+       <tr><td port='col13' bgcolor="lightgray"><font face="helvetica" color="black">Z55XML06</font></td><td>Série NF no XML</td><td>String (3)</td></tr>
+       <tr><td port='col14' bgcolor="lightgray"><font face="helvetica" color="black">BNNF</font></td><td>Número NF no JDE</td><td>Numeric (6)</td></tr>
+       <tr><td port='col15' bgcolor="lightgray"><font face="helvetica" color="black">BSER</font></td><td>Série NF no JDE</td><td>String (2)</td></tr>
+       <tr><td port='col16' bgcolor="lightgray"><font face="helvetica" color="black">N001</font></td><td>NN NF no JDE</td><td>Numric (8)</td></tr>
+       <tr><td port='col17' bgcolor="lightgray"><font face="helvetica" color="black">DCT</font></td><td>Tipo NF no JDE</td><td>String (2)</td></tr>
      </table>
   >];
 
@@ -41,18 +41,18 @@ digraph H {
    label=<
      <table border='0' cellborder='1' color='blue' cellspacing='0'>
        <tr><td colspan="3" bgcolor="lightyellow"><b>F55XML03</b> <i>Detalhe</i></td></tr>
-       <tr><td port='col01' bgcolor="lightblue"><font color="blue">Z55XML01</font></td><td>Chave XML</td><td>Numeric (15)</td></tr>
-       <tr><td port='col02' bgcolor="lightblue"><font color="blue">Z55XMl02</font></td><td>Linha XML</td><td>Numeric (15)</td></tr>
-       <tr><td port='col03' bgcolor="lightgray"><font color="black">Z55XML03</font></td><td>Número PO no XML</td><td>String (60)</td></tr>
-       <tr><td port='col04' bgcolor="lightgray"><font color="black">Z55XML04</font></td><td>Status XML</td><td>String (3)</td></tr>
-       <tr><td port='col05' bgcolor="lightgray"><font color="black">BRNOP</font></td><td>CFOP</td><td>String (5)</td></tr>
-       <tr><td port='col06' bgcolor="lightgray"><font color="black">BCLF</font></td><td>Número NCM</td><td>String (10)</td></tr>
-       <tr><td port='col07' bgcolor="lightgray"><font color="black">DESC2000</font></td><td>Descrição do Item no XML</td><td>String (2000)</td></tr>
-       <tr><td port='col08' bgcolor="lightgray"><font color="black">UORG</font></td><td>Quantidade XML</td><td>Numeric (15)</td></tr>
-       <tr><td port='col09' bgcolor="lightgray"><font color="black">UOM</font></td><td>Unidade de Medida</td><td>String (2)</td></tr>
-       <tr><td port='col10' bgcolor="lightgray"><font color="black">UPRC</font></td><td>Valor Unitário XML</td><td>Numeric (15,4)</td></tr>
-       <tr><td port='col11' bgcolor="lightgray"><font color="black">AEXP</font></td><td>Valor Total no XML</td><td>Numeric (15,2)</td></tr>
-       <tr><td port='col12' bgcolor="lightgray"><font color="black">CMARTMES</font></td><td>Unidade de Medida no XML</td><td>String (3)</td></tr>
+       <tr><td port='col01' bgcolor="lightblue"><font face="helvetica" color="blue">Z55XML01</font></td><td>Chave XML</td><td>Numeric (15)</td></tr>
+       <tr><td port='col02' bgcolor="lightblue"><font face="helvetica" color="blue">Z55XMl02</font></td><td>Linha XML</td><td>Numeric (15)</td></tr>
+       <tr><td port='col03' bgcolor="lightgray"><font face="helvetica" color="black">Z55XML03</font></td><td>Número PO no XML</td><td>String (60)</td></tr>
+       <tr><td port='col04' bgcolor="lightgray"><font face="helvetica" color="black">Z55XML04</font></td><td>Status XML</td><td>String (3)</td></tr>
+       <tr><td port='col05' bgcolor="lightgray"><font face="helvetica" color="black">BRNOP</font></td><td>CFOP</td><td>String (5)</td></tr>
+       <tr><td port='col06' bgcolor="lightgray"><font face="helvetica" color="black">BCLF</font></td><td>Número NCM</td><td>String (10)</td></tr>
+       <tr><td port='col07' bgcolor="lightgray"><font face="helvetica" color="black">DESC2000</font></td><td>Descrição do Item no XML</td><td>String (2000)</td></tr>
+       <tr><td port='col08' bgcolor="lightgray"><font face="helvetica" color="black">UORG</font></td><td>Quantidade XML</td><td>Numeric (15)</td></tr>
+       <tr><td port='col09' bgcolor="lightgray"><font face="helvetica" color="black">UOM</font></td><td>Unidade de Medida</td><td>String (2)</td></tr>
+       <tr><td port='col10' bgcolor="lightgray"><font face="helvetica" color="black">UPRC</font></td><td>Valor Unitário XML</td><td>Numeric (15,4)</td></tr>
+       <tr><td port='col11' bgcolor="lightgray"><font face="helvetica" color="black">AEXP</font></td><td>Valor Total no XML</td><td>Numeric (15,2)</td></tr>
+       <tr><td port='col12' bgcolor="lightgray"><font face="helvetica" color="black">CMARTMES</font></td><td>Unidade de Medida no XML</td><td>String (3)</td></tr>
      </table>
   >];
 
@@ -61,10 +61,10 @@ digraph H {
    label=<
      <table border='0' cellborder='1' color='blue' cellspacing='0'>
        <tr><td colspan="3" bgcolor="lightyellow"><b>F55XML04</b> <i>Erros</i></td></tr>
-       <tr><td port='col01' bgcolor="lightblue"><font color="blue">Z55XML01</font></td><td>Chave XML</td><td>Numeric (15)</td></tr>
-       <tr><td port='col02' bgcolor="lightblue"><font color="blue">Z55XMl02</font></td><td>Linha XML</td><td>Numeric (15)</td></tr>
-       <tr><td port='col03' bgcolor="lightgray"><font color="black">LNID</font></td><td>Ordem</td><td>Numeric (6,3)</td></tr>
-       <tr><td port='col04' bgcolor="lightgray"><font color="black">DL011</font></td><td>Descrição</td><td>String (100)</td></tr>
+       <tr><td port='col01' bgcolor="lightblue"><font face="helvetica" color="blue">Z55XML01</font></td><td>Chave XML</td><td>Numeric (15)</td></tr>
+       <tr><td port='col02' bgcolor="lightblue"><font face="helvetica" color="blue">Z55XMl02</font></td><td>Linha XML</td><td>Numeric (15)</td></tr>
+       <tr><td port='col03' bgcolor="lightgray"><font face="helvetica" color="black">LNID</font></td><td>Ordem</td><td>Numeric (6,3)</td></tr>
+       <tr><td port='col04' bgcolor="lightgray"><font face="helvetica" color="black">DL011</font></td><td>Descrição</td><td>String (100)</td></tr>
      </table>
   >];
 
@@ -73,18 +73,18 @@ digraph H {
    label=<
      <table border='0' cellborder='1' color='blue' cellspacing='0'>
        <tr><td colspan="3" bgcolor="lightyellow"><b>F55XML05</b> <i>PO</i></td></tr>
-       <tr><td port='col01' bgcolor="lightblue"><font color="blue">Z55XML01</font></td><td>Chave XML</td><td>Numeric (15)</td></tr>
-       <tr><td port='col02' bgcolor="lightblue"><font color="blue">Z55XMl02</font></td><td>Linha XML</td><td>Numeric (15)</td></tr>
-       <tr><td port='col03' bgcolor="lightgray"><font color="black">MCU</font></td><td>Unidade PO</td><td>String (2)</td></tr>
-       <tr><td port='col04' bgcolor="lightgray"><font color="black">KCOO</font></td><td>Cia PO</td><td>String (5)</td></tr>
-       <tr><td port='col05' bgcolor="lightgray"><font color="black">DOCO</font></td><td>Número PO</td><td>Numeric (8)</td></tr>
-       <tr><td port='col06' bgcolor="lightgray"><font color="black">DCTO</font></td><td>Tipo PO</td><td>String (2)</td></tr>
-       <tr><td port='col07' bgcolor="lightgray"><font color="black">SFXO</font></td><td>Sufixo PO</td><td>String (2000)</td></tr>
-       <tr><td port='col08' bgcolor="lightgray"><font color="black">LNID</font></td><td>Linha PO</td><td>Numeric (6,3)</td></tr>
-       <tr><td port='col09' bgcolor="lightgray"><font color="black">UORG</font></td><td>Quantidade usada PO</td><td>Numeric (15)</td></tr>
-       <tr><td port='col10' bgcolor="lightgray"><font color="black">UOM</font></td><td>UM PO</td><td>String (2)</td></tr>
-       <tr><td port='col11' bgcolor="lightgray"><font color="black">UPRC</font></td><td>Valor Unitário PO</td><td>Numeric (15,4)</td></tr>
-       <tr><td port='col12' bgcolor="lightgray"><font color="black">AEXP</font></td><td>Valor Total PO</td><td>Numeric (15,2)</td></tr>
+       <tr><td port='col01' bgcolor="lightblue"><font face="helvetica" color="blue">Z55XML01</font></td><td>Chave XML</td><td>Numeric (15)</td></tr>
+       <tr><td port='col02' bgcolor="lightblue"><font face="helvetica" color="blue">Z55XMl02</font></td><td>Linha XML</td><td>Numeric (15)</td></tr>
+       <tr><td port='col03' bgcolor="lightgray"><font face="helvetica" color="black">MCU</font></td><td>Unidade PO</td><td>String (2)</td></tr>
+       <tr><td port='col04' bgcolor="lightgray"><font face="helvetica" color="black">KCOO</font></td><td>Cia PO</td><td>String (5)</td></tr>
+       <tr><td port='col05' bgcolor="lightgray"><font face="helvetica" color="black">DOCO</font></td><td>Número PO</td><td>Numeric (8)</td></tr>
+       <tr><td port='col06' bgcolor="lightgray"><font face="helvetica" color="black">DCTO</font></td><td>Tipo PO</td><td>String (2)</td></tr>
+       <tr><td port='col07' bgcolor="lightgray"><font face="helvetica" color="black">SFXO</font></td><td>Sufixo PO</td><td>String (2000)</td></tr>
+       <tr><td port='col08' bgcolor="lightgray"><font face="helvetica" color="black">LNID</font></td><td>Linha PO</td><td>Numeric (6,3)</td></tr>
+       <tr><td port='col09' bgcolor="lightgray"><font face="helvetica" color="black">UORG</font></td><td>Quantidade usada PO</td><td>Numeric (15)</td></tr>
+       <tr><td port='col10' bgcolor="lightgray"><font face="helvetica" color="black">UOM</font></td><td>UM PO</td><td>String (2)</td></tr>
+       <tr><td port='col11' bgcolor="lightgray"><font face="helvetica" color="black">UPRC</font></td><td>Valor Unitário PO</td><td>Numeric (15,4)</td></tr>
+       <tr><td port='col12' bgcolor="lightgray"><font face="helvetica" color="black">AEXP</font></td><td>Valor Total PO</td><td>Numeric (15,2)</td></tr>
      </table>
   >];
 
@@ -93,11 +93,11 @@ digraph H {
    label=<
      <table border='0' cellborder='1' color='blue' cellspacing='0'>
        <tr><td colspan="3" bgcolor="lightyellow"><b>F55XML06</b> <i>Transações</i></td></tr>
-       <tr><td port='col01' bgcolor="lightblue"><font color="blue">Z55XML01</font></td><td>Chave XML</td><td>Numeric (15)</td></tr>
-       <tr><td port='col02' bgcolor="lightgray"><font color="black">55ESTC</font></td><td>Data Captura</td><td>String (3)</td></tr>
-       <tr><td port='col03' bgcolor="lightgray"><font color="black">ACTDATE</font></td><td>Hora Captura</td><td>Numeric (6)</td></tr>
-       <tr><td port='col04' bgcolor="lightgray"><font color="black">TDAY</font></td><td>Hora Captura</td><td>Numeric (6)</td></tr>
-       <tr><td port='col05' bgcolor="lightgray"><font color="black">XMLCMPST</font></td><td>XML</td><td>String (32000)</td></tr>
+       <tr><td port='col01' bgcolor="lightblue"><font face="helvetica" color="blue">Z55XML01</font></td><td>Chave XML</td><td>Numeric (15)</td></tr>
+       <tr><td port='col02' bgcolor="lightgray"><font face="helvetica" color="black">55ESTC</font></td><td>Data Captura</td><td>String (3)</td></tr>
+       <tr><td port='col03' bgcolor="lightgray"><font face="helvetica" color="black">ACTDATE</font></td><td>Hora Captura</td><td>Numeric (6)</td></tr>
+       <tr><td port='col04' bgcolor="lightgray"><font face="helvetica" color="black">TDAY</font></td><td>Hora Captura</td><td>Numeric (6)</td></tr>
+       <tr><td port='col05' bgcolor="lightgray"><font face="helvetica" color="black">XMLCMPST</font></td><td>XML</td><td>String (32000)</td></tr>
      </table>
   >];
 
@@ -179,16 +179,16 @@ digraph H {
                Recebido\l|"
           ]
 
-  tabela01:col01 -> tabela06:col01;
-  tabela01:col01 -> tabela02:col01;
-  tabela02:col01 -> tabela03:col01;
-  tabela02:col01 -> tabela04:col01;
+  tabela01:col01 -> tabela06:col01 [color="blue"];
+  tabela01:col01 -> tabela02:col01 [color="blue"];
+  tabela02:col01 -> tabela03:col01 [color="red"];
+  tabela02:col01 -> tabela04:col01 [color="red"];
   tabela02:col03 -> node001 [style="dotted"];
   tabela02:col11 -> node002 [style="dotted"];
-  tabela03:col01 -> tabela04:col01;
-  tabela03:col02 -> tabela04:col02;
-  tabela03:col01 -> tabela05:col01;
-  tabela03:col02 -> tabela05:col02;
+  tabela03:col01 -> tabela04:col01 [color="green"];
+  tabela03:col02 -> tabela04:col02 [color="green"];
+  tabela03:col01 -> tabela05:col01 [color="green"];
+  tabela03:col02 -> tabela05:col02 [color="green"];
   tabela03:col04 -> node004 [style="dotted"];
   tabela06:col02 -> node003 [style="dotted"];
 
