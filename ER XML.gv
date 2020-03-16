@@ -1,7 +1,4 @@
 digraph R {
-    edge [
-        arrowtail = "empty"
-    ]
 
     node001 [
                 fontname = "Courrier",
