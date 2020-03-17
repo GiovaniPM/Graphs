@@ -12,7 +12,7 @@ digraph G {
     ]
     Animal [
         style=filled
-        fillcolor="#4287f5:#c9deff"
+        fillcolor="#4287f5:#fcba03"
         label = "{Animal|+ name : string\l+ age : int\l|+ birth() : void\l+ die() : void\l}"
     ]
     subgraph clusterAnimalImpl {
