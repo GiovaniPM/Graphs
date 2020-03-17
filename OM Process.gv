@@ -83,7 +83,7 @@ digraph R {
                 shape=record,
                 style="rounded,filled",
                 fillcolor="white:lightblue"
-                label="{{010|Copiar alçadas}|Atualiza o pedido\nna alçada|F55UI020\nF5543ICO}}"
+                label="{{010|Copiar Alçadas}|Atualiza o pedido\nna alçada|F55UI020\nF5543ICO}}"
             ]
     node011 [
                 fontname = "Arial",
