@@ -11,7 +11,7 @@ digraph R {
                 shape=record,
                 style="rounded,filled",
                 fillcolor="white:lightblue"
-                label="{{001|Criar OM}|Gera a OM|F4301\nF4311}}"
+                label="{{001|Gerar OM}|Cria a OM|F4301\nF4311}}"
             ]
     node002 [
                 fontname = "Arial",
@@ -91,7 +91,7 @@ digraph R {
                 shape=record,
                 style="rounded,filled",
                 fillcolor="white:lightblue"
-                label="{{011|Alterar fornecedor}|Troca o fornecedor|F4301\nF4311}}"
+                label="{{011|Alterar fornecedor}|Troca o fornecedor\nno pedido|F4301\nF4311}}"
             ]
     nodefin [
                 shape=circle,
