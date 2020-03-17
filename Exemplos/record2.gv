@@ -1,10 +1,10 @@
 digraph structs {
 	node[shape=record]
 	struct1 [label="<f0> left|<f1> middle|<f2> right"];
-	struct2 [label="{<f0> one|<f1> two\n\n\n}" shape=Mrecord];
+	struct2 [label="{<f0> one|<f1> \ntwo\n\n}" shape=Mrecord];
 	struct3 [label="hello\nworld |{ b |{c|<here> d|e}| f}| g | h"];
-	struct4 [label="{a|{b|c|d|e}|{f|g|h|{<f0> i|j}}|k}" shape=Mrecord];
+	struct4 [label="{a|{b|c|d|e}|{f|{<f0>g|{h|i}|j}|k}|l}" shape=Mrecord];
 	struct1:f1 -> struct2:f0;
 	struct1:f0 -> struct3:f1;
-	struct1:f2 -> struct4:f0;
+	struct1:f2 -> struct4:f0 [color=red];
 }
