@@ -1,7 +1,7 @@
 digraph structs {
-	node[shape=record]
-	struct1 [label="<f0> left|<f1> middle|<f2> right"];
-	struct2 [label="{<f0> one|<f1> \ntwo\n\n}" shape=Mrecord];
+	node[shape=record];
+	struct1 [label="<f0>left|<f1>middle|<f2>right"];
+	struct2 [label="{<f0>one|<f1>\n\ntwo\n\n\n}" shape=Mrecord];
 	struct3 [label="hello\nworld |{ b |{c|<f1> d|e}| f}| g | h"];
 	struct4 [label="{a|{b|c|d|e}|{f|{<f0>g|{h|i}|j}|k}|l}" shape=Mrecord];
 	struct1:f1 -> struct2:f0;
