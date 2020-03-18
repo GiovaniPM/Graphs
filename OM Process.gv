@@ -19,7 +19,7 @@ digraph R {
                 shape=record,
                 style="rounded,filled",
                 fillcolor="white:lightblue"
-                label="{{002|Verificar regra}|SDB = 'REQ'\nTYDT = 'OM'|F00092}}"
+                label="{{002|Verificar regra}|SDB = 'REQ'\nTYDT = 'OM'|F00092}"
             ]
     node003 [
                 fontname = "Arial",
@@ -35,7 +35,7 @@ digraph R {
                 shape=record,
                 style="rounded,filled",
                 fillcolor="white:lightblue"
-                label="{{004|Solicitar Alçadas}|Força a solicitação\nda alçada|F55UI020\nF5543ICO}}"
+                label="{{004|Solicitar Alçadas}|Força a solicitação\nda alçada|F55UI020\nF5543ICO}"
             ]
     node005 [
                 fontname = "Arial",
@@ -59,7 +59,7 @@ digraph R {
                 shape=record,
                 style="rounded,filled",
                 fillcolor="white:lightblue"
-                label="{{007|Testar regra}|SDB = 'REQ'\nTYDT = 'OM'|F00092}}"
+                label="{{007|Testar regra}|SDB = 'REQ'\nTYDT = 'OM'|F00092}"
             ]
     node008 [
                 fontname = "Arial",
@@ -75,7 +75,7 @@ digraph R {
                 shape=record,
                 style="rounded,filled",
                 fillcolor="white:lightblue"
-                label="{{009|Gerar O3}|Copia a OM\npara O3|F4301\nF4311}}"
+                label="{{009|Gerar O3}|Copia a OM\npara O3|F4301\nF4311}"
             ]
     node010 [
                 fontname = "Arial",
@@ -83,7 +83,7 @@ digraph R {
                 shape=record,
                 style="rounded,filled",
                 fillcolor="white:lightblue"
-                label="{{010|Copiar Alçadas}|Atualiza o pedido\nna alçada|F55UI020\nF5543ICO}}"
+                label="{{010|Copiar Alçadas}|Atualiza o pedido\nna alçada|F55UI020\nF5543ICO}"
             ]
     node011 [
                 fontname = "Arial",
@@ -91,7 +91,7 @@ digraph R {
                 shape=record,
                 style="rounded,filled",
                 fillcolor="white:lightblue"
-                label="{{011|Alterar fornecedor}|Troca o fornecedor\nno pedido|F4301\nF4311}}"
+                label="{{011|Alterar fornecedor}|Troca o fornecedor\nno pedido|F4301\nF4311}"
             ]
     nodefin [
                 shape=circle,
