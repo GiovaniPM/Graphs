@@ -11,7 +11,7 @@ digraph R {
                 shape=record,
                 style="rounded,filled",
                 fillcolor="white:lightblue"
-                label="Seq|{Resume Process|Line 1\nLine 2|Object Interface}"
+                label="{{Seq|Resume Process}|Line 1\nLine 2|Object Interface}"
             ]
     node002 [
                 fontname = "Arial",

@@ -11,7 +11,7 @@ digraph R {
                 shape=record,
                 style="rounded,filled",
                 fillcolor="white:lightblue"
-                label="{{001|Gerar OM}|Cria a OM|F4301\nF4311}}"
+                label="{{001|Gerar OM}|Cria a OM|F4301\nF4311}"
             ]
     node002 [
                 fontname = "Arial",
