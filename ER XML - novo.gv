@@ -164,30 +164,32 @@ digraph H {
     shape=record,
     style="rounded,filled",
     fillcolor="white:#f5c78e"
-    label="001|LF-CTE\l
-               LF-CTEOS\l
-               LF-NFE\l
-               LF-NFSE\l
-               OC-CTE\l
-               OC-CTEOS\l
-               OC-NFE\l
-               OC-NFSE\l|
-               CTe - Transporte\l
-               CTeOS - Transporte OS\l
-               NFe - Produto\l
-               NFSe - Serviço\l
-               CTe - Transporte\l
-               CTeOS - Transporte OS\l
-               NFe - Produto\l
-               NFSe - Serviço\l|
-               Livro Fiscal\l
-               Livro Fiscal\l
-               Livro Fiscal\l
-               Livro Fiscal\l
-               Ordem de Compra\l
-               Ordem de Compra\l
-               Ordem de Compra\l
-               Ordem de Compra\l"
+    label="{{001|
+             UDC 55/XN}|{
+             LF-CTE\l
+             LF-CTEOS\l
+             LF-NFE\l
+             LF-NFSE\l
+             OC-CTE\l
+             OC-CTEOS\l
+             OC-NFE\l
+             OC-NFSE\l|
+             CTe - Transporte\l
+             CTeOS - Transporte OS\l
+             NFe - Produto\l
+             NFSe - Serviço\l
+             CTe - Transporte\l
+             CTeOS - Transporte OS\l
+             NFe - Produto\l
+             NFSe - Serviço\l|
+             Livro Fiscal\l
+             Livro Fiscal\l
+             Livro Fiscal\l
+             Livro Fiscal\l
+             Ordem de Compra\l
+             Ordem de Compra\l
+             Ordem de Compra\l
+             Ordem de Compra\l|}}"
   ]
 
   node002 [
@@ -196,12 +198,14 @@ digraph H {
     shape=record,
     style="rounded,filled",
     fillcolor="white:#f5c78e"
-    label="002|AUT\l
-               CAN\l
-               CAP\l|
-               Autorizado\l
-               Cancelado\l
-               Cancelado Provisório\l|}"
+    label="{{002|
+             UDC 55/XM}|{
+             AUT\l
+             CAN\l
+             CAP\l|
+             Autorizado\l
+             Cancelado\l
+             Cancelado Provisório\l||}}"
   ]
 
   node003 [
@@ -210,10 +214,11 @@ digraph H {
     shape=record,
     style="rounded,filled",
     fillcolor="white:#f5c78e"
-    label="003|AUT\l
-               CAN\l|
-               Autorizado\l
-               Cancelado\l|}"
+    label="003|
+           AUT\l
+           CAN\l|
+           Autorizado\l
+           Cancelado\l||}"
   ]
 
   node004 [
@@ -222,18 +227,36 @@ digraph H {
     shape=record,
     style="rounded,filled",
     fillcolor="white:#f5c78e"
-    label="004|\<branco\>\l
-               200\l
-               500\l
-               700\l
-               998\l
-               999\l|
-               Importado\l
-               Erro na Vinculação\l
-               Vinculado\l
-               Aceito\l
-               Cencelado\l
-               Recebido\l|"
+    label="{{004|
+             UDC 55/XR}|{
+             \<branco\>\l
+             200\l
+             500\l
+             700\l
+             998\l
+             999\l|
+             Importado\l
+             Erro na Vinculação\l
+             Vinculado\l
+             Aceito\l
+             Cencelado\l
+             Recebido\l||}}"
+  ]
+
+  node005 [
+    fontname = "Arial",
+    fontsize = 8,
+    shape=record,
+    style="rounded,filled",
+    fillcolor="white:#f5c78e"
+    label="{{005|
+             UDC 55/XG}|{
+             2961\l
+             1009\l|
+             IMAGEM/TEXTO FOLHAPRESS\l
+             Serviço:Representaçao de Qualq\l||
+             Y\l
+             N\l}}"
   ]
 
   tabela01:col01 -> tabela02:col01 [color="blue"];
