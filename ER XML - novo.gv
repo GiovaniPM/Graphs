@@ -214,11 +214,12 @@ digraph H {
     shape=record,
     style="rounded,filled",
     fillcolor="white:#f5c78e"
-    label="003|
+    label="{{003|
+           no UDC}|{
            AUT\l
            CAN\l|
            Autorizado\l
-           Cancelado\l||}"
+           Cancelado\l||}}"
   ]
 
   node004 [
