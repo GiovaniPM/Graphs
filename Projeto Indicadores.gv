@@ -4,6 +4,21 @@ digraph H {
 
   subgraph cluster_A{
 
+    node005 [
+      fontname = "Arial",
+      fontsize = 8,
+      shape=record,
+      style="rounded,filled",
+      fillcolor="white:yellow"
+      label="{Exemplo SQL|
+               insert into proddta.F5543012 (TTGS3B,TTADJ02,TTADJ01,TTUORG, TTAEXP, TTUSER, TTTDAY, TTLNID)\l
+               select\l
+                 TTGS3B,TTIA02*10000,TTIA01*10000, TTQTYS, TTAEXP, 'GIOVANIM', 122626, rownum\l
+               from\l
+               ...\l
+        }"
+    ]
+
     tabela01 [
       shape=none
       label=<
@@ -17,7 +32,7 @@ digraph H {
         </table>
     >];
 
-    proc01 [
+    proc001 [
       fontname = "Courrier",
       fontsize = 8,
       shape=boxe,
@@ -37,7 +52,7 @@ digraph H {
              END;\l"
     ]
 
-    trig01 [
+    trig001 [
       fontname = "Courrier",
       fontsize = 8,
       shape=boxe,
@@ -50,8 +65,9 @@ digraph H {
              END;\l"
     ]
 
-    tabela01 -> trig01 [ style=invis ]
-    trig01 -> proc01 
+    tabela01 -> trig001 [ style=dashed ]
+    trig001 -> proc001 [ style=dashed ]
+    node005 -> tabela01 [style="dashed"]
 
   }
 
@@ -109,32 +125,12 @@ digraph H {
 
     nodeini -> node001
     node001 -> node002
+    node002 -> node003 [style="invis"]
+    node003 -> node004
+    node004 -> nodefin
 
   }
 
-  subgraph cluster_C{
-
-    node005 [
-      fontname = "Arial",
-      fontsize = 8,
-      shape=record,
-      style="rounded,filled",
-      fillcolor="white:yellow"
-      label="{Exemplo SQL|
-               insert into proddta.F5543012 (TTGS3B,TTADJ02,TTADJ01,TTUORG, TTAEXP, TTUSER, TTTDAY, TTLNID)\l
-               select\l
-                 TTGS3B,TTIA02*10000,TTIA01*10000, TTQTYS, TTAEXP, 'GIOVANIM', 122626, rownum\l
-               from\l
-               ...\l
-        }"
-    ]
-
-  }
-
-  node002 -> tabela01 [style="dashed"]
-  node002 -> trig01
-  node002 -> node003 [style="invis"]
-  proc01 -> node003
-  node003 -> node004
-  node004 -> nodefin
+  proc001 -> node003 [color=blue penwidth=5]
+  node002 -> node005 [color=blue penwidth=5]
 }
