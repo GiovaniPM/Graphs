@@ -1,0 +1,140 @@
+digraph H {
+
+  compound=COMPOUND
+
+  subgraph cluster_A{
+
+    tabela01 [
+      shape=none
+      label=<
+        <table border='0' cellborder='1' color='lightblue' cellspacing='0'>
+          <tr><td colspan="3" bgcolor="lightyellow"><b>F55SQL<sup>TS</sup></b> <i>XML's</i></td></tr>
+          <tr><td port='col01' bgcolor="lightblue"><font face="arial" color="blue" >UKID</font></td><td><font face="arial">SQL ID</font></td><td><font face="arial">Numeric (15)</font></td></tr>
+          <tr><td port='col02' bgcolor="lightgray"><font face="arial" color="black">DESC2000</font></td><td><font face="arial">SQL line 01</font></td><td><font face="arial">String (2000)</font></td></tr>
+          <tr><td port='col03' bgcolor="lightgray"><font face="arial" color="black">COMMENT</font></td><td><font face="arial">SQL line 02</font></td><td><font face="arial">String (2000)</font></td></tr>
+          <tr><td port='col04' bgcolor="lightgray"><font face="arial" color="black">CNLS</font></td><td><font face="arial">SQL line 03</font></td><td><font face="arial">String (2000)</font></td></tr>
+          <tr><td port='col05' bgcolor="lightgray"><font face="arial" color="black">CURRENT</font></td><td><font face="arial">SQL line 04</font></td><td><font face="arial">String (2000)</font></td></tr>
+        </table>
+    >];
+
+    proc01 [
+      fontname = "Courrier",
+      fontsize = 8,
+      shape=boxe,
+      style="filled",
+      color=lightblue,
+      fillcolor="white:lightblue"
+      label="
+             create or replace procedure Proc55ExecutaSQL (\l
+               pUkid  IN number,\l
+               pSQL1  IN varchar2,\l
+               pSQL2  IN varchar2,\l
+               pSQL3  IN varchar2,\l
+               pSQL4  IN varchar2\l
+             ) as\l
+             BEGIN\l
+               execute immediate (rtrim(pSQL1,' ')||' '||rtrim(pSQL2,' ')||' '||rtrim(pSQL3,' ')||' '||rtrim(pSQL4,' '));\l
+             END;\l"
+    ]
+
+    trig01 [
+      fontname = "Courrier",
+      fontsize = 8,
+      shape=boxe,
+      style="filled",
+      color=lightblue,
+      fillcolor="white:lightblue"
+      label="
+             CREATE OR REPLACE TRIGGER F55SQL_before_insert BEFORE INSERT ON F55SQL for each row BEGIN\l
+               Proc55ExecutaSQL(:new.TSUKID, :new.TSDESC2000, :new.TSCOMMENT, :new.TSCNLS, :new.TSCURRENT);\l
+             END;\l"
+    ]
+
+    tabela01 -> trig01 [ style=invis ]
+    trig01 -> proc01 
+
+  }
+
+  subgraph cluster_B{
+
+    nodeini [
+      shape=circle,
+      style="filled",
+      fillcolor="white:lightgreen",
+      label=""
+    ]
+
+    nodefin [
+      shape=circle,
+      style="filled",
+      fillcolor="white:#ee636e",
+      label=""
+    ]
+
+    node001 [
+      fontname = "Arial",
+      fontsize = 8,
+      shape=record,
+      style="rounded,filled",
+      fillcolor="white:lightblue"
+      label="{{001|APP}|Executa\nconsulta|P55xxxx}"
+    ]
+
+    node002 [
+      fontname = "Arial",
+      fontsize = 8,
+      shape=record,
+      style="rounded,filled",
+      fillcolor="white:lightblue"
+      label="{{002|APP}|Monta\nquery|P55xxxx}"
+    ]
+
+    node003 [
+      fontname = "Arial",
+      fontsize = 8,
+      shape=record,
+      style="rounded,filled",
+      fillcolor="white:lightblue"
+      label="{{003|Tabela}|Popula\ndados|F55xxxx}"
+    ]
+
+    node004 [
+      fontname = "Arial",
+      fontsize = 8,
+      shape=record,
+      style="rounded,filled",
+      fillcolor="white:lightblue"
+      label="{{004|APP}|Apresenta\ndados|F55xxxx}"
+    ]
+
+    nodeini -> node001
+    node001 -> node002
+
+  }
+
+  subgraph cluster_C{
+
+    node005 [
+      fontname = "Arial",
+      fontsize = 8,
+      shape=record,
+      style="rounded,filled",
+      fillcolor="white:yellow"
+      label="{Exemplo SQL|
+               insert into proddta.F5543012 (TTGS3B,TTADJ02,TTADJ01,TTUORG, TTAEXP, TTUSER, TTTDAY, TTLNID)\l
+               select\l
+                 TTGS3B,TTIA02*10000,TTIA01*10000, TTQTYS, TTAEXP, 'GIOVANIM', 122626, rownum\l
+               from\l
+               ...\l
+        }"
+    ]
+
+  }
+
+  node002 -> tabela01 [style="dashed"]
+  node002 -> trig01
+  node002 -> node003 [style="invis"]
+  proc01 -> node003
+  node003 -> node004
+  node004 -> nodefin
+}
