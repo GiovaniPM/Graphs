@@ -9,7 +9,7 @@ digraph H {
       fontsize = 8,
       shape=record,
       style="rounded,filled",
-      fillcolor="white:yellow"
+      fillcolor="lightyellow"
       label="{Exemplo SQL|
                insert into proddta.F5543012 (TTGS3B,TTADJ02,TTADJ01,TTUORG, TTAEXP, TTUSER, TTTDAY, TTLNID)\l
                select\l
