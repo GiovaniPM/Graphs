@@ -87,6 +87,6 @@ digraph R {
                 fillcolor="white:#ee636e",
                 label=""
             ]
-    node004 -> node005 [fontname = "Arial", fontsize = 12, fontcolor="green", color="green:yellow:green", label="Sim"]
-    node006 -> node007 [fontname = "Arial", fontsize = 12, fontcolor="red", color="red:yellow:red", label="Não"]
+    node004 -> node005 [fontname = "Arial", fontsize = 12, fontcolor="green", color="green:none:green", label="Sim"]
+    node006 -> node007 [fontname = "Arial", fontsize = 12, fontcolor="red", color="red:none:red", label="Não"]
 }

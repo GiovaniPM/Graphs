@@ -1,0 +1,64 @@
+digraph H {
+
+  tabela01 [
+   shape=none
+   label=<
+     <table border='0' cellborder='1' color='lightblue' cellspacing='0'>
+       <tr><td colspan="3" bgcolor="lightyellow"><b>Locais</b></td></tr>
+       <tr><td port='col01' bgcolor="lightblue"><font face="helvetica" color="blue" >ID_Local</font></td><td>Identificador</td><td>Numeric (15)</td></tr>
+       <tr><td port='col02' bgcolor="lightgray"><font face="helvetica" color="black">Cia     </font></td><td>Companhia    </td><td>String  (30)</td></tr>
+       <tr><td port='col03' bgcolor="lightgray"><font face="helvetica" color="black">Div1    </font></td><td>Divisão 1    </td><td>Numeric (15)</td></tr>
+       <tr><td port='col04' bgcolor="lightgray"><font face="helvetica" color="black">Div2    </font></td><td>Divisão 2    </td><td>Numeric (15)</td></tr>
+       <tr><td port='col05' bgcolor="lightgray"><font face="helvetica" color="black">Div3    </font></td><td>Divisão 3    </td><td>Numeric (15)</td></tr>
+       <tr><td port='col06' bgcolor="lightgray"><font face="helvetica" color="black">Div4    </font></td><td>Divisão 4    </td><td>Numeric (15)</td></tr>
+       <tr><td port='col07' bgcolor="lightgray"><font face="helvetica" color="black">Div5    </font></td><td>Divisão 5    </td><td>Numeric (15)</td></tr>
+       <tr><td port='col08' bgcolor="lightgray"><font face="helvetica" color="black">Div6    </font></td><td>Divisão 6    </td><td>Numeric (15)</td></tr>
+       <tr><td port='col09' bgcolor="lightgray"><font face="helvetica" color="black">Div7    </font></td><td>Divisão 7    </td><td>Numeric (15)</td></tr>
+       <tr><td bgcolor="lightgray"><font face="helvetica" color="white">Data</font></td><td>Data</td><td>TimeStamp</td></tr>
+     </table>
+  >];
+
+  tabela02 [
+   shape=none
+   label=<
+     <table border='0' cellborder='1' color='lightblue' cellspacing='0'>
+       <tr><td colspan="3" bgcolor="lightyellow"><b>Divisões</b></td></tr>
+       <tr><td port='col01' bgcolor="lightblue"><font face="helvetica" color="blue" >ID_Div  </font></td><td>Identificador</td><td>Numeric (15)</td></tr>
+       <tr><td port='col02' bgcolor="lightgray"><font face="helvetica" color="black">Nome    </font></td><td>Descrição    </td><td>String  (30)</td></tr>
+       <tr><td bgcolor="lightgray"><font face="helvetica" color="white">Data</font></td><td>Data</td><td>TimeStamp</td></tr>
+     </table>
+  >];
+
+  tabela03 [
+   shape=none
+   label=<
+     <table border='0' cellborder='1' color='lightblue' cellspacing='0'>
+       <tr><td colspan="3" bgcolor="lightyellow"><b>Companhias</b></td></tr>
+       <tr><td port='col01' bgcolor="lightblue"><font face="helvetica" color="blue" >ID_Cia  </font></td><td>Identificador</td><td>Numeric (15)</td></tr>
+       <tr><td port='col02' bgcolor="lightgray"><font face="helvetica" color="black">Nome    </font></td><td>Descrição    </td><td>String  (30)</td></tr>
+       <tr><td bgcolor="lightgray"><font face="helvetica" color="white">Data</font></td><td>Data</td><td>TimeStamp</td></tr>
+     </table>
+  >];
+
+  tabela04 [
+   shape=none
+   label=<
+     <table border='0' cellborder='1' color='lightblue' cellspacing='0'>
+       <tr><td colspan="3" bgcolor="lightyellow"><b>Cardex</b></td></tr>
+       <tr><td port='col01' bgcolor="lightblue"><font face="helvetica" color="blue" >ID_Cardex </font></td><td>Identificador</td><td>Numeric (15)</td></tr>
+       <tr><td port='col02' bgcolor="lightgray"><font face="helvetica" color="black">Local     </font></td><td>Descrição    </td><td>Numeric (15)</td></tr>
+       <tr><td bgcolor="lightgray"><font face="helvetica" color="white">Data</font></td><td>Data</td><td>TimeStamp</td></tr>
+     </table>
+  >];
+
+  tabela03:col01 -> tabela01:col02 [color="blue"];
+  tabela02:col01 -> tabela01:col03 [color="blue"];
+  tabela02:col01 -> tabela01:col04 [color="blue"];
+  tabela02:col01 -> tabela01:col05 [color="blue"];
+  tabela02:col01 -> tabela01:col06 [color="blue"];
+  tabela02:col01 -> tabela01:col07 [color="blue"];
+  tabela02:col01 -> tabela01:col08 [color="blue"];
+  tabela02:col01 -> tabela01:col09 [color="blue"];
+  tabela01:col01 -> tabela04:col02 [color="blue"];
+
+}
