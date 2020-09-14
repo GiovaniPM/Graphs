@@ -24,7 +24,7 @@ digraph H {
      <table border='0' cellborder='1' color='lightblue' cellspacing='0'>
        <tr><td colspan="3" bgcolor="lightyellow"><b>Divisões</b></td></tr>
        <tr><td port='col01' bgcolor="lightblue"><font face="helvetica" color="blue" >ID_Div  </font></td><td>Identificador</td><td>Numeric (15)</td></tr>
-       <tr><td port='col02' bgcolor="lightgray"><font face="helvetica" color="black">Nome    </font></td><td>Descrição    </td><td>String  (30)</td></tr>
+       <tr><td port='col02' bgcolor="lightgray"><font face="helvetica" color="black">Nome    </font></td><td>Descrição    </td><td>String  (50)</td></tr>
        <tr><td bgcolor="lightgray"><font face="helvetica" color="white">Data</font></td><td>Data</td><td>TimeStamp</td></tr>
      </table>
   >];
@@ -35,7 +35,7 @@ digraph H {
      <table border='0' cellborder='1' color='lightblue' cellspacing='0'>
        <tr><td colspan="3" bgcolor="lightyellow"><b>Companhias</b></td></tr>
        <tr><td port='col01' bgcolor="lightblue"><font face="helvetica" color="blue" >ID_Cia  </font></td><td>Identificador</td><td>Numeric (15)</td></tr>
-       <tr><td port='col02' bgcolor="lightgray"><font face="helvetica" color="black">Nome    </font></td><td>Descrição    </td><td>String  (30)</td></tr>
+       <tr><td port='col02' bgcolor="lightgray"><font face="helvetica" color="black">Nome    </font></td><td>Descrição    </td><td>String  (50)</td></tr>
        <tr><td bgcolor="lightgray"><font face="helvetica" color="white">Data</font></td><td>Data</td><td>TimeStamp</td></tr>
      </table>
   >];
@@ -44,14 +44,70 @@ digraph H {
    shape=none
    label=<
      <table border='0' cellborder='1' color='lightblue' cellspacing='0'>
-       <tr><td colspan="3" bgcolor="lightyellow"><b>Cardex</b></td></tr>
-       <tr><td port='col01' bgcolor="lightblue"><font face="helvetica" color="blue" >ID_Cardex </font></td><td>Identificador</td><td>Numeric (15)</td></tr>
-       <tr><td port='col02' bgcolor="lightgray"><font face="helvetica" color="black">Local     </font></td><td>Descrição    </td><td>Numeric (15)</td></tr>
+       <tr><td colspan="3" bgcolor="lightyellow"><b>Produtos</b></td></tr>
+       <tr><td port='col01' bgcolor="lightblue"><font face="helvetica" color="blue" >ID_Produto</font></td><td>Identificador</td><td>Numeric (15)</td></tr>
+       <tr><td port='col02' bgcolor="lightgray"><font face="helvetica" color="black">Nome     </font></td><td>Descrição     </td><td>String  (50)</td></tr>
+       <tr><td port='col03' bgcolor="lightgray"><font face="helvetica" color="black">Qual1    </font></td><td>Qualificador  </td><td>Numeric (15)</td></tr>
+       <tr><td port='col04' bgcolor="lightgray"><font face="helvetica" color="black">Qual2    </font></td><td>Qualificador  </td><td>Numeric (15)</td></tr>
+       <tr><td port='col05' bgcolor="lightgray"><font face="helvetica" color="black">Qual3    </font></td><td>Qualificador  </td><td>Numeric (15)</td></tr>
+       <tr><td port='col06' bgcolor="lightgray"><font face="helvetica" color="black">Qual4    </font></td><td>Qualificador  </td><td>Numeric (15)</td></tr>
+       <tr><td port='col07' bgcolor="lightgray"><font face="helvetica" color="black">Qual5    </font></td><td>Qualificador  </td><td>Numeric (15)</td></tr>
+       <tr><td port='col08' bgcolor="lightgray"><font face="helvetica" color="black">Qual6    </font></td><td>Qualificador  </td><td>Numeric (15)</td></tr>
+       <tr><td port='col09' bgcolor="lightgray"><font face="helvetica" color="black">Qual7    </font></td><td>Qualificador  </td><td>Numeric (15)</td></tr>
+       <tr><td port='col10' bgcolor="lightgray"><font face="helvetica" color="black">Qual8    </font></td><td>Qualificador  </td><td>Numeric (15)</td></tr>
+       <tr><td port='col11' bgcolor="lightgray"><font face="helvetica" color="black">Qual9    </font></td><td>Qualificador  </td><td>Numeric (15)</td></tr>
+       <tr><td port='col12' bgcolor="lightgray"><font face="helvetica" color="black">Qual10   </font></td><td>Qualificador  </td><td>Numeric (15)</td></tr>
+       <tr><td port='col13' bgcolor="lightgray"><font face="helvetica" color="black">Qual11   </font></td><td>Qualificador  </td><td>Numeric (15)</td></tr>
+       <tr><td port='col14' bgcolor="lightgray"><font face="helvetica" color="black">Qual12   </font></td><td>Qualificador  </td><td>Numeric (15)</td></tr>
+       <tr><td port='col15' bgcolor="lightgray"><font face="helvetica" color="black">Qual13   </font></td><td>Qualificador  </td><td>Numeric (15)</td></tr>
+       <tr><td port='col16' bgcolor="lightgray"><font face="helvetica" color="black">Qual14   </font></td><td>Qualificador  </td><td>Numeric (15)</td></tr>
        <tr><td bgcolor="lightgray"><font face="helvetica" color="white">Data</font></td><td>Data</td><td>TimeStamp</td></tr>
      </table>
   >];
 
-  tabela03:col01 -> tabela01:col02 [color="blue"];
+  tabela05 [
+   shape=none
+   label=<
+     <table border='0' cellborder='1' color='lightblue' cellspacing='0'>
+       <tr><td colspan="3" bgcolor="lightyellow"><b>Cardex</b></td></tr>
+       <tr><td port='col01' bgcolor="lightblue"><font face="helvetica" color="blue" >ID_Cardex </font></td><td>Identificador</td><td>Numeric (15)</td></tr>
+       <tr><td port='col02' bgcolor="lightgray"><font face="helvetica" color="black">Local     </font></td><td>Descrição    </td><td>Numeric (15)</td></tr>
+       <tr><td port='col03' bgcolor="lightgray"><font face="helvetica" color="black">Produto   </font></td><td>Item         </td><td>Numeric (15)</td></tr>
+       <tr><td port='col04' bgcolor="lightgray"><font face="helvetica" color="black">Origem    </font></td><td>Documento    </td><td>Numeric (15)</td></tr>
+       <tr><td bgcolor="lightgray"><font face="helvetica" color="white">Data</font></td><td>Data</td><td>TimeStamp</td></tr>
+     </table>
+  >];
+
+  tabela06 [
+   shape=none
+   label=<
+     <table border='0' cellborder='1' color='lightblue' cellspacing='0'>
+       <tr><td colspan="3" bgcolor="lightyellow"><b>Qualificadores</b></td></tr>
+       <tr><td port='col01' bgcolor="lightblue"><font face="helvetica" color="blue" >ID_Qual  </font></td><td>Qualificador</td><td>Numeric (15)</td></tr>
+       <tr><td port='col02' bgcolor="lightblue"><font face="helvetica" color="blue" >Coluna   </font></td><td>Coluna      </td><td>Numeric (02)</td></tr>
+       <tr><td port='col03' bgcolor="lightgray"><font face="helvetica" color="black">Código   </font></td><td>Código      </td><td>String  (50)</td></tr>
+       <tr><td port='col04' bgcolor="lightgray"><font face="helvetica" color="black">Descrição</font></td><td>Descrição   </td><td>String  (50)</td></tr>
+       <tr><td bgcolor="lightgray"><font face="helvetica" color="white">Data</font></td><td>Data</td><td>TimeStamp</td></tr>
+     </table>
+  >];
+
+  tabela07 [
+   shape=none
+   label=<
+     <table border='0' cellborder='1' color='lightblue' cellspacing='0'>
+       <tr><td colspan="3" bgcolor="lightyellow"><b>Origens</b></td></tr>
+       <tr><td port='col01' bgcolor="lightblue"><font face="helvetica" color="blue" >ID_Orig    </font></td><td>Origem       </td><td>Numeric (15)</td></tr>
+       <tr><td port='col02' bgcolor="lightgray"><font face="helvetica" color="black">Número     </font></td><td>Número       </td><td>String  (50)</td></tr>
+       <tr><td port='col03' bgcolor="lightgray"><font face="helvetica" color="black">Série      </font></td><td>Série        </td><td>String  (50)</td></tr>
+       <tr><td port='col04' bgcolor="lightgray"><font face="helvetica" color="black">Complemento</font></td><td>Complemento  </td><td>String  (50)</td></tr>
+       <tr><td port='col05' bgcolor="lightgray"><font face="helvetica" color="black">Tipo       </font></td><td>Tipo         </td><td>String  (50)</td></tr>
+       <tr><td port='col06' bgcolor="lightgray"><font face="helvetica" color="black">Emissão    </font></td><td>Data         </td><td>String  (50)</td></tr>
+       <tr><td port='col07' bgcolor="lightgray"><font face="helvetica" color="black">Emissor    </font></td><td>CIC          </td><td>String  (50)</td></tr>
+       <tr><td bgcolor="lightgray"><font face="helvetica" color="white">Data</font></td><td>Data</td><td>TimeStamp</td></tr>
+     </table>
+  >];
+
+  tabela01:col01 -> tabela05:col02 [color="red"];
   tabela02:col01 -> tabela01:col03 [color="blue"];
   tabela02:col01 -> tabela01:col04 [color="blue"];
   tabela02:col01 -> tabela01:col05 [color="blue"];
@@ -59,6 +115,22 @@ digraph H {
   tabela02:col01 -> tabela01:col07 [color="blue"];
   tabela02:col01 -> tabela01:col08 [color="blue"];
   tabela02:col01 -> tabela01:col09 [color="blue"];
-  tabela01:col01 -> tabela04:col02 [color="blue"];
+  tabela03:col01 -> tabela01:col02 [color="green"];
+  tabela04:col01 -> tabela05:col03 [color="red"];
+  tabela06:col01 -> tabela04:col03 [color="blue"];
+  tabela06:col01 -> tabela04:col04 [color="blue"];
+  tabela06:col01 -> tabela04:col05 [color="blue"];
+  tabela06:col01 -> tabela04:col06 [color="blue"];
+  tabela06:col01 -> tabela04:col07 [color="blue"];
+  tabela06:col01 -> tabela04:col08 [color="blue"];
+  tabela06:col01 -> tabela04:col09 [color="blue"];
+  tabela06:col01 -> tabela04:col10 [color="blue"];
+  tabela06:col01 -> tabela04:col11 [color="blue"];
+  tabela06:col01 -> tabela04:col12 [color="blue"];
+  tabela06:col01 -> tabela04:col13 [color="blue"];
+  tabela06:col01 -> tabela04:col14 [color="blue"];
+  tabela06:col01 -> tabela04:col15 [color="blue"];
+  tabela06:col01 -> tabela04:col16 [color="blue"];
+  tabela07:col01 -> tabela05:col04 [color="green"];
 
 }
