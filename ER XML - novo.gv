@@ -163,7 +163,7 @@ digraph H {
     fontsize = 8,
     shape=record,
     style="rounded,filled",
-    fillcolor="white:#f5c78e"
+    fillcolor="#f5c78e"
     label="{{001|
              UDC 55/XN}|{
              LF-CTE\l
@@ -196,7 +196,7 @@ digraph H {
     fontsize = 8,
     shape=record,
     style="rounded,filled",
-    fillcolor="white:#f5c78e"
+    fillcolor="#f5c78e"
     label="{{002|
              UDC 55/XM}|{
              AUT\l
@@ -212,7 +212,7 @@ digraph H {
     fontsize = 8,
     shape=record,
     style="rounded,filled",
-    fillcolor="white:#f5c78e"
+    fillcolor="#f5c78e"
     label="{{003|
            no UDC}|{
            AUT\l
@@ -226,7 +226,7 @@ digraph H {
     fontsize = 8,
     shape=record,
     style="rounded,filled",
-    fillcolor="white:#f5c78e"
+    fillcolor="#f5c78e"
     label="{{004|
              UDC 55/XR}|{
              \<branco\>\l
@@ -248,7 +248,7 @@ digraph H {
     fontsize = 8,
     shape=record,
     style="rounded,filled",
-    fillcolor="white:#f5c78e"
+    fillcolor="#f5c78e"
     label="{{005|
              UDC 55/XG}|{
              2961\l
