@@ -38,7 +38,7 @@ digraph H {
       shape=boxe,
       style="filled",
       color=lightblue,
-      fillcolor="white:lightblue"
+      fillcolor="lightblue"
       label="
              create or replace procedure Proc55ExecutaSQL (\l
                pUkid  IN number,\l
@@ -58,7 +58,7 @@ digraph H {
       shape=boxe,
       style="filled",
       color=lightblue,
-      fillcolor="white:lightblue"
+      fillcolor="lightblue"
       label="
              CREATE OR REPLACE TRIGGER F55SQL_before_insert BEFORE INSERT ON F55SQL for each row BEGIN\l
                Proc55ExecutaSQL(:new.TSUKID, :new.TSDESC2000, :new.TSCOMMENT, :new.TSCNLS, :new.TSCURRENT);\l
@@ -76,14 +76,14 @@ digraph H {
     nodeini [
       shape=circle,
       style="filled",
-      fillcolor="white:lightgreen",
+      fillcolor="lightgreen",
       label=""
     ]
 
     nodefin [
       shape=circle,
       style="filled",
-      fillcolor="white:#ee636e",
+      fillcolor="#ee636e",
       label=""
     ]
 
@@ -92,7 +92,7 @@ digraph H {
       fontsize = 8,
       shape=record,
       style="rounded,filled",
-      fillcolor="white:lightblue"
+      fillcolor="lightblue"
       label="{{001|APP}|Executa\nconsulta|P55xxxx}"
     ]
 
@@ -101,7 +101,7 @@ digraph H {
       fontsize = 8,
       shape=record,
       style="rounded,filled",
-      fillcolor="white:lightblue"
+      fillcolor="lightblue"
       label="{{002|APP}|Monta\nquery|P55xxxx}"
     ]
 
@@ -110,7 +110,7 @@ digraph H {
       fontsize = 8,
       shape=record,
       style="rounded,filled",
-      fillcolor="white:lightblue"
+      fillcolor="lightblue"
       label="{{003|Tabela}|Popula\ndados|F55xxxx}"
     ]
 
@@ -119,7 +119,7 @@ digraph H {
       fontsize = 8,
       shape=record,
       style="rounded,filled",
-      fillcolor="white:lightblue"
+      fillcolor="lightblue"
       label="{{004|APP}|Apresenta\ndados|F55xxxx}"
     ]
 

@@ -2,7 +2,7 @@ digraph R {
     nodeini [
                 shape=circle,
                 style="filled",
-                fillcolor="white:lightgreen",
+                fillcolor="lightgreen",
                 label=""
             ]
     node001 [
@@ -10,7 +10,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:lightblue"
+                fillcolor="lightblue"
                 label="{{001|Criar OM}|Cria a OM|F4301}"
             ]
     node002 [
@@ -18,7 +18,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:lightblue"
+                fillcolor="lightblue"
                 label="{{002|Verificar CEP}|F4301.POHAB01=F0117.ADDZ|F4301\nF0117}"
             ]
     node003 [
@@ -26,7 +26,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="diagonals,filled",
-                fillcolor="white:#fbfbb1"
+                fillcolor="#fbfbb1"
                 label="003|CEP"
             ]
     node004 [
@@ -34,7 +34,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:lightblue"
+                fillcolor="lightblue"
                 label="{{004|Tratar CEP}|Apresenta nome da\ncidade (CTY1)|F0117}"
             ]
     node005 [
@@ -42,13 +42,13 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:lightblue"
+                fillcolor="lightblue"
                 label="{{005|Tratar AB}|Apresenta nome do\ncadastro (ALPH)|F0101}"
             ]
     nodefin [
                 shape=circle,
                 style="filled",
-                fillcolor="white:#ee636e",
+                fillcolor="#ee636e",
                 label=""
             ]
     nodeini -> node001

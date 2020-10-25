@@ -2,7 +2,7 @@ digraph R {
     nodeini [
                 shape=circle,
                 style="filled",
-                fillcolor="white:lightgreen",
+                fillcolor="lightgreen",
                 label=""
             ]
     node001 [
@@ -10,7 +10,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:lightblue"
+                fillcolor="lightblue"
                 label="{{001|Pegar Ref NF}|Pego a tag\n ID do XML|}"
             ]
     node002 [
@@ -18,7 +18,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:lightblue"
+                fillcolor="lightblue"
                 label="{{002|Carregar XML}||F55XML01\nF55XML06}"
             ]
     node003 [
@@ -26,7 +26,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:lightblue"
+                fillcolor="lightblue"
                 label="{{003|Procurar NF}|Com a Ref NF procuro\nno campo 55EREF e\nretorno o Z55XML01|F55XML02}"
             ]
     node004 [
@@ -34,7 +34,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:lightblue"
+                fillcolor="lightblue"
                 label="{{004|Alterar Status}|Coloca '998' no\ncampo Z55XML04\ne 'CAN' em 55ESTC|F55XML02\nF55XML03}"
             ]
     node005 [
@@ -42,7 +42,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:lightblue"
+                fillcolor="lightblue"
                 label="{{005|Alterar Campo}|Conforme mapeamento\ne 55ESTC = 'CAN'|F55XML02}"
             ]
     node006 [
@@ -50,7 +50,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:lightblue"
+                fillcolor="lightblue"
                 label="{{006|Incluir tudo}||F55XML02\nF55XML03}"
             ]
     node007 [
@@ -58,7 +58,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:lightblue"
+                fillcolor="lightblue"
                 label="{{007|Incluir cancelamento}|Insere '998' no\ncampo Z55XML04\ne 'CAN' em 55ESTC|F55XML02\nF55XML03}"
             ]
     node008 [
@@ -66,7 +66,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:lightblue"
+                fillcolor="lightblue"
                 label="{{008|Apagar pedido vinculado}|Z55XML01 = ID do XML|F55XML05}"
             ]
     node010 [
@@ -74,7 +74,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="diagonals,filled",
-                fillcolor="white:#fbfbb1"
+                fillcolor="#fbfbb1"
                 label="010|Achou"
             ]
     node011 [
@@ -82,7 +82,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="diagonals,filled",
-                fillcolor="white:#fbfbb1"
+                fillcolor="#fbfbb1"
                 label="011|Cancelamento"
             ]
     node012 [
@@ -90,7 +90,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="diagonals,filled",
-                fillcolor="white:#fbfbb1"
+                fillcolor="#fbfbb1"
                 label="012|Cancelamento"
             ]
     node013 [
@@ -98,7 +98,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:lightblue"
+                fillcolor="lightblue"
                 label="{{013|Incluir Campos}|Conforme mapeamento\ne Z55XML04 = '998'|F55XML03}"
             ]
     node014 [
@@ -106,7 +106,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="diagonals,filled",
-                fillcolor="white:#fbfbb1"
+                fillcolor="#fbfbb1"
                 label="014|Recebido"
             ]
     node015 [
@@ -114,7 +114,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:lightblue"
+                fillcolor="lightblue"
                 label="{{015|Determinar recebimento}|Se alguma linha estiver com\nZ55XML04 = '999'|F55XML03}"
             ]
     node016 [
@@ -122,13 +122,13 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:lightblue"
+                fillcolor="lightblue"
                 label="{{016|Alterar Status}|Coloca 'CAP' no\ncampo 55ESTC|F55XML02}"
             ]
     nodefin [
                 shape=circle,
                 style="filled",
-                fillcolor="white:#ee636e",
+                fillcolor="#ee636e",
                 label=""
             ]
     nodeini -> node001
