@@ -2,7 +2,7 @@ digraph R {
     nodeini [
                 shape=circle,
                 style="filled",
-                fillcolor="white:lightgreen",
+                fillcolor="lightgreen",
                 label=""
             ]
     node001 [
@@ -10,7 +10,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:lightblue"
+                fillcolor="lightblue"
                 label="{{001|Gerar OM}|Cria a OM|F4301\nF4311}"
             ]
     node002 [
@@ -18,7 +18,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:lightblue"
+                fillcolor="lightblue"
                 label="{{002|Verificar regra}|SDB = 'REQ'\nTYDT = 'OM'|F00092}"
             ]
     node003 [
@@ -26,7 +26,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="diagonals,filled",
-                fillcolor="white:#fbfbb1"
+                fillcolor="#fbfbb1"
                 label="003|Validou"
             ]
     node004 [
@@ -34,7 +34,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:lightblue"
+                fillcolor="lightblue"
                 label="{{004|Solicitar Alçadas}|Força a solicitação\nda alçada|F55UI020\nF5543ICO}"
             ]
     node005 [
@@ -42,7 +42,7 @@ digraph R {
                 fontsize = 6,
                 shape=ellipse,
                 style="filled",
-                fillcolor="white:#fa5cfa",
+                fillcolor="#fa5cfa",
                 label="005\nR554308A"
             ]
     node006 [
@@ -50,7 +50,7 @@ digraph R {
                 fontsize = 6,
                 shape=ellipse,
                 style="filled",
-                fillcolor="white:#fa5cfa",
+                fillcolor="#fa5cfa",
                 label="006\nR554308A"
             ]
     node007 [
@@ -58,7 +58,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:lightblue"
+                fillcolor="lightblue"
                 label="{{007|Testar regra}|SDB = 'REQ'\nTYDT = 'OM'|F00092}"
             ]
     node008 [
@@ -66,7 +66,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="diagonals,filled",
-                fillcolor="white:#fbfbb1"
+                fillcolor="#fbfbb1"
                 label="008|Validou"
             ]
     node009 [
@@ -74,7 +74,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:lightblue"
+                fillcolor="lightblue"
                 label="{{009|Gerar O3}|Copia a OM\npara O3|F4301\nF4311}"
             ]
     node010 [
@@ -82,7 +82,7 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:lightblue"
+                fillcolor="lightblue"
                 label="{{010|Copiar Alçadas}|Atualiza o pedido\nna alçada|F55UI020\nF5543ICO}"
             ]
     node011 [
@@ -90,13 +90,13 @@ digraph R {
                 fontsize = 8,
                 shape=record,
                 style="rounded,filled",
-                fillcolor="white:lightblue"
+                fillcolor="lightblue"
                 label="{{011|Alterar fornecedor}|Troca o fornecedor\nno pedido|F4301\nF4311}"
             ]
     nodefin [
                 shape=circle,
                 style="filled",
-                fillcolor="white:#ee636e",
+                fillcolor="#ee636e",
                 label=""
             ]
     nodeini -> node001
