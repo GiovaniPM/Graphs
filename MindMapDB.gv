@@ -1,0 +1,167 @@
+digraph R {
+    node001 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="rounded,filled",
+                fillcolor="lightblue"
+                label="{Nome|Giovani Perotto Mesquita}"
+            ]
+    node002 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="rounded,filled",
+                fillcolor="lightblue"
+                label="{RG|5048181365}"
+            ]
+    node003 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="rounded,filled",
+                fillcolor="lightblue"
+                label="{Emissor|SSP/RS}"
+            ]
+    node004 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="rounded,filled",
+                fillcolor="lightblue"
+                label="{CIC|62256092020}"
+            ]
+    node005 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="rounded,filled",
+                fillcolor="lightblue"
+                label="{Logradouro|Rua Pelotas}"
+            ]
+    node006 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="rounded,filled",
+                fillcolor="lightblue"
+                label="{Número|443}"
+            ]
+    node007 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="rounded,filled",
+                fillcolor="lightblue"
+                label="{Animal|Humano}"
+            ]
+    node008 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="rounded,filled",
+                fillcolor="lightblue"
+                label="{Animal|Cão}"
+            ]
+    node009 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="rounded,filled",
+                fillcolor="lightblue"
+                label="{Nome|Thor}"
+            ]
+    node010 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="rounded,filled",
+                fillcolor="yellow"
+                label="{Sinonimo|Canino}"
+            ]
+    node011 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="rounded,filled",
+                fillcolor="lightblue"
+                label="{Sexo|Masculino}"
+            ]
+    node012 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="rounded,filled",
+                fillcolor="lightblue"
+                label="{Nome|Maria Rosa Borba}"
+            ]
+    node013 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="rounded,filled",
+                fillcolor="lightblue"
+                label="{Sexo|Feminino}"
+            ]
+    node014 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="rounded,filled",
+                fillcolor="yellow"
+                label="{Sinonimo|Pessoa}"
+            ]
+    node015 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="rounded,filled",
+                fillcolor="lightblue"
+                label="{Complemento|Apartamento}"
+            ]
+    node016 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="rounded,filled",
+                fillcolor="lightblue"
+                label="{Número|33}"
+            ]
+    node017 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="rounded,filled",
+                fillcolor="lightblue"
+                label="{Número|34}"
+            ]
+    node018 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="rounded,filled",
+                fillcolor="lightblue"
+                label="{Estado Civil|Casado}"
+            ]
+    node001 -> node002 [color="blue"]
+    node002 -> node003 [color="blue"]
+    node001 -> node004 [color="blue"]
+    node001 -> node005 [color="blue"]
+    node005 -> node006 [color="blue"]
+    node005 -> node006 [color="red"]
+    node007 -> node001 [color="blue"]
+    node008 -> node009 [color="green"]
+    node008 -> node010 [color="green"]
+    node001 -> node011 [color="blue"]
+    node009 -> node011 [color="green"]
+    node012 -> node013 [color="red"]
+    node012 -> node005 [color="red"]
+    node007 -> node014 [color="blue"]
+    node005 -> node015 [color="blue"]
+    node005 -> node015 [color="red"]
+    node015 -> node016 [color="blue"]
+    node015 -> node016 [color="red"]
+    node015 -> node017 [color="gray"]
+    node001 -> node018 [color="blue"]
+    node018 -> node012 [color="blue"]
+}

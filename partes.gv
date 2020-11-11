@@ -1,0 +1,10 @@
+digraph R {
+    node018 [
+                fontname = "Arial",
+                fontsize = 8,
+                shape=record,
+                style="rounded,filled",
+                fillcolor="lightblue"
+                label="{Estado Civil|Casado}"
+            ]
+}
